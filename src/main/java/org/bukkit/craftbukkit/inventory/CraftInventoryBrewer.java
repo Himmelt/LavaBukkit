@@ -1,7 +1,7 @@
 package org.bukkit.craftbukkit.inventory;
 
 import net.minecraft.inventory.IInventory;
-import org.atom.inventory.util.InventoryUtils;
+import co.matrixdevelopment.lava.inv.util.InventoryUtils;
 import org.bukkit.block.BrewingStand;
 import org.bukkit.inventory.BrewerInventory;
 import org.bukkit.inventory.ItemStack;

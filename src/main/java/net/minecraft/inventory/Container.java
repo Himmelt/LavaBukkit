@@ -1,5 +1,6 @@
 package net.minecraft.inventory;
 
+import co.matrixdevelopment.lava.asm.IInventoryTransactionProvider;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import net.minecraft.entity.player.EntityPlayer;
@@ -15,7 +16,6 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import org.atom.asm.IInventoryTransactionProvider;
 import org.bukkit.Bukkit;
 import org.bukkit.craftbukkit.entity.CraftPlayer;
 import org.bukkit.craftbukkit.inventory.CraftInventory;

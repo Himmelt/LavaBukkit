@@ -71,7 +71,7 @@ public class ModInventoryTransformer implements IClassTransformer {
         ClassWriter classWriter = new ClassWriter(ClassWriter.COMPUTE_MAXS);
 
         // implements IInventoryTransactionProvider
-        classNode.interfaces.add("org/atom/asm/IInventoryTransactionProvider");
+        classNode.interfaces.add("co/matrixdevelopment/lava/asm/IInventoryTransactionProvider");
 
         // private List<HumanEntity> transaction;
         classWriter.visitField(ACC_PRIVATE, "transaction", "Ljava/util/List;", "Ljava/util/List<Lorg/bukkit/entity/HumanEntity;>;", null).visitEnd();

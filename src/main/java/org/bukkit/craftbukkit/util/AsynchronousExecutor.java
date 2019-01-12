@@ -28,7 +28,7 @@ import org.apache.commons.lang3.Validate;
  */
 public final class AsynchronousExecutor<P, T, C, E extends Throwable> {
 
-    public static interface CallBackProvider<P, T, C, E extends Throwable> extends ThreadFactory {
+    public interface CallBackProvider<P, T, C, E extends Throwable> extends ThreadFactory {
 
         /**
          * Normally an asynchronous call, but can be synchronous
@@ -57,10 +57,10 @@ public final class AsynchronousExecutor<P, T, C, E extends Throwable> {
     }
 
     @SuppressWarnings("rawtypes")
-    static final AtomicIntegerFieldUpdater STATE_FIELD = AtomicIntegerFieldUpdater.newUpdater(Task.class, "state");
+    static final AtomicIntegerFieldUpdater STATE_FIELD = AtomicIntegerFieldUpdater.newUpdater(AsynchronousExecutor.Task.class, "state");
 
     @SuppressWarnings({ "unchecked", "rawtypes" })
-    private static boolean set(Task $this, int expected, int value) {
+    private static boolean set(AsynchronousExecutor.Task $this, int expected, int value) {
         return STATE_FIELD.compareAndSet($this, expected, value);
     }
 

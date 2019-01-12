@@ -8,7 +8,7 @@ import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextComponentTranslation;
 import net.minecraft.world.ILockableContainer;
 import net.minecraft.world.LockCode;
-import org.atom.asm.IInventoryTransactionProvider;
+import co.matrixdevelopment.lava.asm.IInventoryTransactionProvider;
 import org.bukkit.Location;
 import org.bukkit.craftbukkit.entity.CraftHumanEntity;
 import org.bukkit.entity.HumanEntity;

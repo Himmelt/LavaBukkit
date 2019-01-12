@@ -1569,7 +1569,7 @@ public class CraftPlayer extends CraftHumanEntity implements Player {
     }
 
     // Spigot start
-    private final Spigot spigot = new Spigot()
+    private final Player.Spigot spigot = new Player.Spigot()
     {
         @Override
         public boolean getCollidesWithEntities() {
@@ -1581,7 +1581,6 @@ public class CraftPlayer extends CraftHumanEntity implements Player {
             CraftPlayer.this.setCollidable(collides);
         }
 
-        @Override
         public void respawn()
         {
             if ( getHealth() <= 0 && isOnline() )
@@ -1590,12 +1589,10 @@ public class CraftPlayer extends CraftHumanEntity implements Player {
             }
         }
 
-        @Override
         public void sendMessage(BaseComponent component) {
             sendMessage( new BaseComponent[] { component } );
         }
 
-        @Override
         public void sendMessage(BaseComponent... components) {
             if ( getHandle().connection == null ) return;
 
@@ -1604,12 +1601,10 @@ public class CraftPlayer extends CraftHumanEntity implements Player {
             getHandle().connection.sendPacket(packet);
         }
 
-        @Override
         public void sendMessage(net.md_5.bungee.api.ChatMessageType position, BaseComponent component) {
             sendMessage( position, new BaseComponent[] { component } );
         }
 
-        @Override
         public void sendMessage(net.md_5.bungee.api.ChatMessageType position, BaseComponent... components) {
             if ( getHandle().connection == null ) return;
 
@@ -1622,7 +1617,6 @@ public class CraftPlayer extends CraftHumanEntity implements Player {
             getHandle().connection.sendPacket(packet);
         }
 
-        @Override
         public void playEffect( Location location, Effect effect, int id, int data, float offsetX, float offsetY, float offsetZ, float speed, int particleCount, int radius )
         {
             Validate.notNull( location, "Location cannot be null" );
@@ -1679,13 +1673,11 @@ public class CraftPlayer extends CraftHumanEntity implements Player {
             }
         }
 
-        @Override
         public String getLocale()
         {
             return getHandle().language;
         }
 
-        @Override
         public Set<Player> getHiddenPlayers()
         {
             Set<Player> ret = new HashSet<Player>();
@@ -1698,7 +1690,7 @@ public class CraftPlayer extends CraftHumanEntity implements Player {
         }
     };
 
-    public Spigot spigot()
+    public Player.Spigot spigot()
     {
         return spigot;
     }

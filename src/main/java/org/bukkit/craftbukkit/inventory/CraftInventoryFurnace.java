@@ -1,7 +1,7 @@
 package org.bukkit.craftbukkit.inventory;
 
 import net.minecraft.tileentity.TileEntityFurnace;
-import org.atom.inventory.util.InventoryUtils;
+import co.matrixdevelopment.lava.inv.util.InventoryUtils;
 import org.bukkit.block.Furnace;
 import org.bukkit.inventory.FurnaceInventory;
 import org.bukkit.inventory.ItemStack;

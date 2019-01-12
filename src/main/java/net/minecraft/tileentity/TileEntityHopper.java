@@ -29,7 +29,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
-import org.atom.inventory.util.InventoryUtils;
+import co.matrixdevelopment.lava.inv.util.InventoryUtils;
 import org.bukkit.craftbukkit.inventory.CraftItemStack;
 import org.bukkit.event.inventory.InventoryMoveItemEvent;
 import org.bukkit.event.inventory.InventoryPickupItemEvent;
