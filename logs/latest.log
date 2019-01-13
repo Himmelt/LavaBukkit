@@ -1,39 +1,78 @@
-[16:03:23] [DEBUG] [FML]: Creating vanilla freeze snapshot
-[16:03:24] [DEBUG] [FML]: Vanilla freeze snapshot created
-[16:03:46] [DEBUG] [io.netty.util.internal.logging.InternalLoggerFactory]: Using Log4J2 as the default logging framework
-[16:03:46] [DEBUG] [io.netty.util.ResourceLeakDetector]: -Dio.netty.leakDetection.level: simple
-[16:03:46] [DEBUG] [io.netty.util.ResourceLeakDetector]: -Dio.netty.leakDetection.targetRecords: 4
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent]: Platform: Windows
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent0]: -Dio.netty.noUnsafe: false
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent0]: Java version: 8
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent0]: sun.misc.Unsafe.theUnsafe: available
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent0]: sun.misc.Unsafe.copyMemory: available
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent0]: java.nio.Buffer.address: available
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent0]: direct buffer constructor: available
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent0]: java.nio.Bits.unaligned: available, true
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent0]: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent0]: java.nio.DirectByteBuffer.<init>(long, int): available
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent]: sun.misc.Unsafe: available
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent]: -Dio.netty.tmpdir: C:\Users\GMatrixGames\AppData\Local\Temp (java.io.tmpdir)
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent]: -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent]: -Dio.netty.maxDirectMemory: 1877475328 bytes
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent]: -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[16:03:54] [DEBUG] [io.netty.util.internal.CleanerJava6]: java.nio.ByteBuffer.cleaner(): available
-[16:03:54] [DEBUG] [io.netty.util.internal.PlatformDependent]: -Dio.netty.noPreferDirect: false
-[16:04:39] [WARN] [com.mojang.text2speech.NarratorWindows]: ERROR : Couldn't load Narrator library : Unable to load library 'SAPIWrapper_x64':
-The specified module could not be found.
-
-The specified module could not be found.
-
-The specified module could not be found.
-
-Native library (win32-x86-64/SAPIWrapper_x64.dll) not found in resource path ([file:/C:/Users/GMatrixGames/eclipse-workspace/LavaBukkit/target/surefire/surefirebooter8588670364722003887.jar])
-ERROR : Couldn't load Narrator library : Unable to load library 'SAPIWrapper_x86':
-The specified module could not be found.
-
-The specified module could not be found.
-
-The specified module could not be found.
-
-Native library (win32-x86-64/SAPIWrapper_x86.dll) not found in resource path ([file:/C:/Users/GMatrixGames/eclipse-workspace/LavaBukkit/target/surefire/surefirebooter8588670364722003887.jar])
-
+[19:30:35] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[19:30:35] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[19:30:35] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[19:30:35] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[19:30:35] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_181, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_181
+[19:30:35] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[19:30:35] [main/ERROR] [FML]: Full: C:\Users\miner\Desktop\LavaBukkit\LavaBukkit\target\lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar
+[19:30:35] [main/ERROR] [FML]: Trimmed: c:/users/miner/desktop/lavabukkit/lavabukkit/
+[19:30:35] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[19:30:35] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[19:30:35] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[19:30:35] [main/INFO] [FML]: Ignoring missing certificate for coremod LavaPlugin (co.matrixdevelopment.lava.asm.LavaPlugin), we are in deobf and it's a forge core plugin
+[19:30:35] [main/INFO] [FML]: Searching C:\Users\miner\Desktop\LavaBukkit\LavaBukkit\.\mods for mods
+[19:30:35] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:30:35] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[19:30:35] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:30:35] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:30:35] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:30:36] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[19:30:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:30:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:30:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[19:30:36] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[19:30:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[19:30:36] [main/ERROR] [LaunchWrapper]: Unable to launch
+java.lang.ClassNotFoundException: net.minecraft.server.MinecraftServer
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_181]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:131) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.run(ServerLaunchWrapper.java:70) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.main(ServerLaunchWrapper.java:34) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/command/ICommandSender
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: net.minecraft.command.ICommandSender
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	... 12 more
+Caused by: java.lang.NullPointerException
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	... 12 more
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: java.lang.reflect.InvocationTargetException
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at java.lang.reflect.Method.invoke(Unknown Source)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.run(ServerLaunchWrapper.java:70)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.main(ServerLaunchWrapper.java:34)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: Caused by: net.minecraftforge.fml.relauncher.FMLSecurityManager$ExitTrappedException
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at net.minecraftforge.fml.relauncher.FMLSecurityManager.checkPermission(FMLSecurityManager.java:52)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at java.lang.SecurityManager.checkExit(Unknown Source)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at java.lang.Runtime.exit(Unknown Source)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at java.lang.System.exit(Unknown Source)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:138)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	... 6 more

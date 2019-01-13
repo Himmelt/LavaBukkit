@@ -5,3 +5,7 @@
 /*.bin
 /.idea
 /target
+/.settings
+.project
+/logs
+/logs/*.log
