@@ -1,0 +1,184 @@
+[19:30:35] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[19:30:35] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[19:30:35] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[19:30:35] [main/DEBUG] [FML]: Injecting tracing printstreams for STDOUT/STDERR.
+[19:30:35] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[19:30:35] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_181, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_181
+[19:30:35] [main/DEBUG] [FML]: Java classpath at launch is:
+[19:30:35] [main/DEBUG] [FML]:     target/lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar
+[19:30:35] [main/DEBUG] [FML]: Java library path at launch is:
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+[19:30:35] [main/DEBUG] [FML]:     C:\WINDOWS\Sun\Java\bin
+[19:30:35] [main/DEBUG] [FML]:     C:\WINDOWS\system32
+[19:30:35] [main/DEBUG] [FML]:     C:\WINDOWS
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\Common Files\Oracle\Java\javapath
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\Razer Chroma SDK\bin
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Razer Chroma SDK\bin
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\Intel\iCLS Client\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Intel\iCLS Client\
+[19:30:35] [main/DEBUG] [FML]:     C:\Windows\system32
+[19:30:35] [main/DEBUG] [FML]:     C:\Windows
+[19:30:35] [main/DEBUG] [FML]:     C:\Windows\System32\Wbem
+[19:30:35] [main/DEBUG] [FML]:     C:\Windows\System32\WindowsPowerShell\v1.0\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Intel\Intel(R) Management Engine Components\DAL
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Intel\Intel(R) Management Engine Components\IPT
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common
+[19:30:35] [main/DEBUG] [FML]:     C:\Users\miner\AppData\Local\Microsoft\WindowsApps
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Git\cmd
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\GtkSharp\2.12\bin
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\PuTTY\
+[19:30:35] [main/DEBUG] [FML]:     C:\WINDOWS\system32
+[19:30:35] [main/DEBUG] [FML]:     C:\WINDOWS
+[19:30:35] [main/DEBUG] [FML]:     C:\WINDOWS\System32\Wbem
+[19:30:35] [main/DEBUG] [FML]:     C:\WINDOWS\System32\WindowsPowerShell\v1.0\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\SlikSvn\bin
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\SlikSvn\bin\svn.exe
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\dotnet\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\nodejs\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Gource\cmd
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\CMake\bin\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\CMake\bin
+[19:30:35] [main/DEBUG] [FML]:     D:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Microsoft VS Code\bin
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Microsoft SQL Server\140\Tools\Binn\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Microsoft SQL Server\140\DTS\Binn\
+[19:30:35] [main/DEBUG] [FML]:     C:\WINDOWS\System32\OpenSSH\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Intel\WiFi\bin\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Common Files\Intel\WirelessCommon\
+[19:30:35] [main/DEBUG] [FML]:     C:\MinGW\bin
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\QuickTime\QTSystem\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\MySQL\MySQL Utilities 1.6\
+[19:30:35] [main/DEBUG] [FML]:     C:\Users\miner\scoop\apps\maven\current\bin
+[19:30:35] [main/DEBUG] [FML]:     C:\Users\miner\scoop\shims
+[19:30:35] [main/DEBUG] [FML]:     C:\Python27
+[19:30:35] [main/DEBUG] [FML]:     C:\Python27\Scripts
+[19:30:35] [main/DEBUG] [FML]:     C:\Users\miner\AppData\Local\Programs\Python\Python36\Scripts\
+[19:30:35] [main/DEBUG] [FML]:     C:\Users\miner\AppData\Local\Programs\Python\Python36\
+[19:30:35] [main/DEBUG] [FML]:     C:\Users\miner\AppData\Local\Microsoft\WindowsApps
+[19:30:35] [main/DEBUG] [FML]:     C:\Users\miner\AppData\Local\Programgs\Python\Python36-32\include
+[19:30:35] [main/DEBUG] [FML]:     C:\Users\miner\AppData\Local\particle\bin
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Intel\WiFi\bin\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\Common Files\Intel\WirelessCommon\
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\SlikSvn\bin\
+[19:30:35] [main/DEBUG] [FML]:     C:\Users\miner\AppData\Roaming\npm
+[19:30:35] [main/DEBUG] [FML]:     C:\Users\miner\AppData\Local\atom\bin
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\Nmap
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files\CMake\bin
+[19:30:35] [main/DEBUG] [FML]:     C:\Program Files (x86)\CMake\bin
+[19:30:35] [main/DEBUG] [FML]:     C:\Users\miner\AppData\Local\Microsoft\WindowsApps
+[19:30:35] [main/DEBUG] [FML]:     C:\Users\miner\Appdata\local\bin\NASM
+[19:30:35] [main/DEBUG] [FML]:     
+[19:30:35] [main/DEBUG] [FML]:     .
+[19:30:35] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[19:30:35] [main/ERROR] [FML]: Full: C:\Users\miner\Desktop\LavaBukkit\LavaBukkit\target\lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar
+[19:30:35] [main/ERROR] [FML]: Trimmed: c:/users/miner/desktop/lavabukkit/lavabukkit/
+[19:30:35] [main/DEBUG] [FML]: Determined Minecraft Libraries Root: .\libraries
+[19:30:35] [main/DEBUG] [FML]: Cleaning up mods folder: .\mods
+[19:30:35] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[19:30:35] [main/DEBUG] [FML]: Instantiating coremod class FMLCorePlugin
+[19:30:35] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[19:30:35] [main/DEBUG] [FML]: Added access transformer class net.minecraftforge.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[19:30:35] [main/DEBUG] [FML]: Enqueued coremod FMLCorePlugin
+[19:30:35] [main/DEBUG] [FML]: Instantiating coremod class FMLForgePlugin
+[19:30:35] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[19:30:35] [main/DEBUG] [FML]: Enqueued coremod FMLForgePlugin
+[19:30:35] [main/DEBUG] [FML]: Instantiating coremod class LavaPlugin
+[19:30:35] [main/INFO] [FML]: Ignoring missing certificate for coremod LavaPlugin (co.matrixdevelopment.lava.asm.LavaPlugin), we are in deobf and it's a forge core plugin
+[19:30:35] [main/DEBUG] [FML]: Enqueued coremod LavaPlugin
+[19:30:35] [main/DEBUG] [FML]: All fundamental core mods are successfully located
+[19:30:35] [main/DEBUG] [FML]: Discovering coremods
+[19:30:35] [main/INFO] [FML]: Searching C:\Users\miner\Desktop\LavaBukkit\LavaBukkit\.\mods for mods
+[19:30:35] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:30:35] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[19:30:35] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:30:35] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[19:30:35] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:30:35] [main/DEBUG] [FML]: Injecting coremod FMLCorePlugin \{net.minecraftforge.fml.relauncher.FMLCorePlugin\} class transformers
+[19:30:35] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SideTransformer
+[19:30:35] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriptionTransformer
+[19:30:35] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.EventSubscriberTransformer
+[19:30:35] [main/TRACE] [FML]: Registering transformer net.minecraftforge.fml.common.asm.transformers.SoundEngineFixTransformer
+[19:30:35] [main/DEBUG] [FML]: Injection complete
+[19:30:35] [main/DEBUG] [FML]: Running coremod plugin for FMLCorePlugin \{net.minecraftforge.fml.relauncher.FMLCorePlugin\}
+[19:30:35] [main/DEBUG] [FML]: Running coremod plugin FMLCorePlugin
+[19:30:36] [main/DEBUG] [FML]: Loading deobfuscation resource /deobfuscation_data-1.12.2.lzma with 36083 records
+[19:30:36] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[19:30:36] [main/DEBUG] [FML]: Coremod plugin class FMLCorePlugin run successfully
+[19:30:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:30:36] [main/DEBUG] [FML]: Injecting coremod FMLForgePlugin \{net.minecraftforge.classloading.FMLForgePlugin\} class transformers
+[19:30:36] [main/DEBUG] [FML]: Injection complete
+[19:30:36] [main/DEBUG] [FML]: Running coremod plugin for FMLForgePlugin \{net.minecraftforge.classloading.FMLForgePlugin\}
+[19:30:36] [main/DEBUG] [FML]: Running coremod plugin FMLForgePlugin
+[19:30:36] [main/DEBUG] [FML]: Coremod plugin class FMLForgePlugin run successfully
+[19:30:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[19:30:36] [main/DEBUG] [FML]: Injecting coremod LavaPlugin \{co.matrixdevelopment.lava.asm.LavaPlugin\} class transformers
+[19:30:36] [main/TRACE] [FML]: Registering transformer co.matrixdevelopment.lava.asm.transformers.ModInventoryTransformer
+[19:30:36] [main/DEBUG] [FML]: Injection complete
+[19:30:36] [main/DEBUG] [FML]: Running coremod plugin for LavaPlugin \{co.matrixdevelopment.lava.asm.LavaPlugin\}
+[19:30:36] [main/DEBUG] [FML]: Running coremod plugin LavaPlugin
+[19:30:36] [main/DEBUG] [FML]: Coremod plugin class LavaPlugin run successfully
+[19:30:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[19:30:36] [main/DEBUG] [FML]: Loaded 213 rules from AccessTransformer config file forge_at.cfg
+[19:30:36] [main/DEBUG] [FML]: Validating minecraft
+[19:30:36] [main/DEBUG] [FML]: Minecraft validated, launching...
+[19:30:36] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[19:30:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[19:30:36] [main/ERROR] [LaunchWrapper]: Unable to launch
+java.lang.ClassNotFoundException: net.minecraft.server.MinecraftServer
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_181]
+	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:131) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.run(ServerLaunchWrapper.java:70) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.main(ServerLaunchWrapper.java:34) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/command/ICommandSender
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: net.minecraft.command.ICommandSender
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	... 12 more
+Caused by: java.lang.NullPointerException
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_181]
+	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
+	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	... 12 more
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: java.lang.reflect.InvocationTargetException
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at java.lang.reflect.Method.invoke(Unknown Source)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.run(ServerLaunchWrapper.java:70)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.main(ServerLaunchWrapper.java:34)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: Caused by: net.minecraftforge.fml.relauncher.FMLSecurityManager$ExitTrappedException
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at net.minecraftforge.fml.relauncher.FMLSecurityManager.checkPermission(FMLSecurityManager.java:52)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at java.lang.SecurityManager.checkExit(Unknown Source)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at java.lang.Runtime.exit(Unknown Source)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at java.lang.System.exit(Unknown Source)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:138)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	... 6 more

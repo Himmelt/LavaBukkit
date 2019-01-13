@@ -402,13 +402,13 @@
             <version>0.7.10-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>net.minecraft</groupId>
             <artifactId>launchwrapper-fixed</artifactId>
             <version>1.12</version>
             <scope>system</scope>
             <systemPath>${project.basedir}/src/test/resources/launchwrapper-1.12.jar</systemPath>
-        </dependency>
+        </dependency> -->
     </dependencies>
 
     <build>
@@ -495,6 +495,14 @@
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
                             <createSourcesJar>${shadeSourcesJar}</createSourcesJar>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <excludes>
+                                        <exclude>**/Log4j2Plugins.dat</exclude>
+                                    </excludes>
+                                </filter>
+                            </filters>
                         </configuration>
                     </execution>
                 </executions>
