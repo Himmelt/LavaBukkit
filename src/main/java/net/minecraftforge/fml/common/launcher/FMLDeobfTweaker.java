@@ -20,23 +20,22 @@
 package net.minecraftforge.fml.common.launcher;
 
 import java.io.File;
-import java.lang.reflect.Method;
 import java.util.List;
 
-import net.minecraft.launchwrapper.ITweaker;
-import net.minecraft.launchwrapper.LaunchClassLoader;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.relauncher.CoreModManager;
+import net.minecraftforge.fml.relauncher.DebuggableLaunchLoader;
 import net.minecraftforge.fml.relauncher.FMLInjectionData;
+import net.minecraftforge.fml.relauncher.ITweakerDebuggable;
 
-public class FMLDeobfTweaker implements ITweaker {
+public class FMLDeobfTweaker implements ITweakerDebuggable {
     @Override
     public void acceptOptions(List<String> args, File gameDir, File assetsDir, String profile) {
     }
 
     @Override
-    public void injectIntoClassLoader(LaunchClassLoader classLoader) {
+    public void injectIntoClassLoader(DebuggableLaunchLoader classLoader) {
         // Deobfuscation transformer, always last, and the access transformer tweaker as well
         classLoader.registerTransformer("net.minecraftforge.fml.common.asm.transformers.DeobfuscationTransformer");
         // Add all the access transformers now as well

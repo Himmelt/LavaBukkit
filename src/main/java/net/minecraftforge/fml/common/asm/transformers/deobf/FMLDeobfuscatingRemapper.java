@@ -33,6 +33,7 @@ import net.minecraft.launchwrapper.LaunchClassLoader;
 import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.patcher.ClassPatchManager;
+import net.minecraftforge.fml.relauncher.DebuggableLaunchLoader;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.Logger;
@@ -69,7 +70,7 @@ public class FMLDeobfuscatingRemapper extends Remapper {
     private Map<String, Map<String, String>> fieldNameMaps;
     private Map<String, Map<String, String>> methodNameMaps;
 
-    private LaunchClassLoader classLoader;
+    private DebuggableLaunchLoader classLoader;
 
     private static final boolean DEBUG_REMAPPING = Boolean
             .parseBoolean(System.getProperty("fml.remappingDebug", "false"));
@@ -112,7 +113,7 @@ public class FMLDeobfuscatingRemapper extends Remapper {
 
     }
 
-    public void setup(File mcDir, LaunchClassLoader classLoader, String deobfFileName) {
+    public void setup(File mcDir, DebuggableLaunchLoader classLoader, String deobfFileName) {
         this.classLoader = classLoader;
         try {
             List<String> srgList;

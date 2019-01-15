@@ -199,7 +199,7 @@ public class Loader {
     }
 
     private Loader() {
-        modClassLoader = new ModClassLoader(getClass().getClassLoader());
+        modClassLoader = new ModClassLoader(Thread.currentThread().getContextClassLoader());
         if (mccversion != null && !mccversion.equals(MC_VERSION)) {
             FMLLog.log.fatal(
                     "This version of FML is built for Minecraft {}, we have detected Minecraft {} in your minecraft jar file",
