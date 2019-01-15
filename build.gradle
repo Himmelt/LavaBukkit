@@ -1,0 +1,117 @@
+buildscript {
+    repositories {
+        jcenter()
+        maven { url = "https://files.minecraftforge.net/maven" }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath "com.github.jengelman.gradle.plugins:shadow:4.0.3"
+    }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+//Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
+
+version = "1.0"
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'co.matrixdevelopment'
+version = '1.12.2-R0.1-SNAPSHOT'
+
+description = """"""
+
+sourceCompatibility = 1.5
+targetCompatibility = 1.5
+tasks.withType(JavaCompile) {
+	options.encoding = 'UTF-8'
+}
+
+task buildJar(type: Exec) {
+    commandLine "mvn", "package", "-DskipTests"
+}
+
+minecraft {
+    version = "1.12.2-14.23.5.2775"
+    runDir = "run"
+    
+    // the mappings can be changed at any time, and must be in the following format.
+    // snapshot_YYYYMMDD   snapshot are built nightly.
+    // stable_#            stables are built at the discretion of the MCP team.
+    // Use non-default mappings at your own risk. they may not always work.
+    // simply re-run your setup task after changing the mappings to update your workspace.
+    mappings = "snapshot_20171003"
+    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
+}
+
+
+repositories {
+        
+     maven { url "https://files.minecraftforge.net/maven/" }
+     maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+     maven { url "https://libraries.minecraft.net/" }
+     maven { url "https://hub.spigotmc.org/nexus/content/groups/public/" }
+     maven { url "http://kompics.sics.se/maven/repository/" }
+     maven { url "https://maven.repository.redhat.com/ga/" }
+     maven { url "https://papermc.io/repo/repository/maven-public/" }
+     maven { url "https://repo.spongepowered.org/maven" }
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    compile group: 'com.google.code.findbugs', name: 'jsr305', version:'3.0.2'
+    compile group: 'com.mojang', name: 'patchy', version:'1.1'
+    compile group: 'oshi-project', name: 'oshi-core', version:'1.1'
+    compile group: 'net.java.dev.jna', name: 'jna', version:'5.2.0'
+    compile group: 'net.java.dev.jna', name: 'platform', version:'3.5.2'
+    compile group: 'com.ibm.icu', name: 'icu4j-core-mojang', version:'51.2'
+    compile group: 'net.sf.jopt-simple', name: 'jopt-simple', version:'5.0.4'
+    compile group: 'com.paulscode', name: 'codecjorbis', version:'20101023'
+    compile group: 'com.paulscode', name: 'codecwav', version:'20101023'
+    compile group: 'com.paulscode', name: 'libraryjavasound', version:'20101123'
+    compile group: 'com.paulscode', name: 'librarylwjglopenal', version:'20100824'
+    compile group: 'io.netty', name: 'netty-all', version:'4.1.32.Final'
+    compile group: 'com.google.guava', name: 'guava', version:'25.0.0.redhat-1'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version:'3.8.1'
+    compile group: 'commons-io', name: 'commons-io', version:'2.6'
+    compile group: 'commons-codec', name: 'commons-codec', version:'1.10'
+    compile group: 'net.java.jinput', name: 'jinput', version:'2.0.5'
+    compile group: 'net.java.jutils', name: 'jutils', version:'1.0.0'
+    compile group: 'com.google.code.gson', name: 'gson', version:'2.8.5'
+    compile group: 'com.mojang', name: 'authlib', version:'1.5.25'
+    compile group: 'com.mojang', name: 'realms', version:'1.10.22'
+    compile group: 'org.apache.commons', name: 'commons-compress', version:'1.18'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version:'4.5.6'
+    compile group: 'commons-logging', name: 'commons-logging', version:'1.2'
+    compile group: 'org.apache.httpcomponents', name: 'httpcore', version:'4.4.10'
+    compile group: 'it.unimi.dsi', name: 'fastutil', version:'8.2.2'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version:'2.8.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.8.1'
+    compile group: 'org.lwjgl.lwjgl', name: 'lwjgl', version:'2.9.4-nightly-20150209'
+    compile group: 'org.lwjgl.lwjgl', name: 'lwjgl_util', version:'2.9.4-nightly-20150209'
+    compile group: 'com.mojang', name: 'text2speech', version:'1.10.3'
+    compile group: 'net.minecraft', name: 'launchwrapper', version:'1.12'
+    compile group: 'org.jline', name: 'jline', version:'3.5.1'
+    compile group: 'org.ow2.asm', name: 'asm-debug-all', version:'6.0_BETA'
+    compile group: 'com.typesafe.akka', name: 'akka-actor_2.11', version:'2.5.19'
+    compile group: 'com.typesafe', name: 'config', version:'1.2.1'
+    compile group: 'lzma', name: 'lzma', version:'0.0.1'
+    compile group: 'java3d', name: 'vecmath', version:'1.5.2'
+    compile group: 'net.sf.trove4j', name: 'core', version:'3.1.0'
+    compile group: 'org.apache.maven', name: 'maven-artifact', version:'3.6.0'
+    compile group: 'org.yaml', name: 'snakeyaml', version:'1.23'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version:'1.1.1.redhat-1'
+    compile group: 'commons-lang', name: 'commons-lang', version:'2.6.0.redhat-7'
+    compile group: 'net.md-5', name: 'SpecialSource', version:'1.8.5'
+    compile group: 'org.scala-lang.modules', name: 'scala-parser-combinators_2.11', version:'1.1.1'
+    compile group: 'org.xerial', name: 'sqlite-jdbc', version:'3.25.2'
+    compile group: 'mysql', name: 'mysql-connector-java', version:'8.0.13'
+    compile group: 'net.md-5', name: 'bungeecord-chat', version:'1.12-SNAPSHOT'
+    compile group: 'org.fusesource.jansi', name: 'jansi', version:'1.17.1'
+    compile group: 'org.jetbrains', name: 'annotations', version:'16.0.3'
+    testCompile group: 'org.hamcrest', name: 'hamcrest-library', version:'1.3'
+    testCompile group: 'junit', name: 'junit', version:'4.12'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version:'5.0.0'
+    testCompile group: 'org.opentest4j', name: 'opentest4j', version:'1.0.0'
+    testCompile group: 'org.mockito', name: 'mockito-core', version:'2.18.3'
+    testCompile group: 'org.spongepowered', name: 'mixin', version:'0.7.10-SNAPSHOT'
+}
