@@ -185,20 +185,22 @@ public class VersionCommand extends BukkitCommand {
     private void obtainVersion() {
         String version = Bukkit.getVersion();
         if (version == null) version = "Custom";
-        if (version.startsWith("git-Spigot-")) {
-            String[] parts = version.substring("git-Spigot-".length()).split("-");
-            int cbVersions = getDistance("craftbukkit", parts[1].substring(0, parts[1].indexOf(' ')));
-            int spigotVersions = getDistance("spigot", parts[0]);
-            if (cbVersions == -1 || spigotVersions == -1) {
-                setVersionMessage("Error obtaining version information");
-            } else {
-                if (cbVersions == 0 && spigotVersions == 0) {
+        if (version.startsWith("git-LavaBukkit-")) {
+            String[] parts = version.substring("git-LavaBukkit-".length()).split("[-\\s]");
+            int distance = getDistance(null, parts[0]);
+            switch (distance) {
+                case -1:
+                    setVersionMessage("Error obtaining version information");
+                    break;
+                case 0:
                     setVersionMessage("You are running the latest version");
-                } else {
-                    setVersionMessage("You are " + (cbVersions + spigotVersions) + " version(s) behind");
-                }
+                    break;
+                case -2:
+                    setVersionMessage("Unknown version");
+                    break;
+                default:
+                    setVersionMessage("You are " + distance + " version(s) behind");
             }
-
         } else if (version.startsWith("git-Bukkit-")) {
             version = version.substring("git-Bukkit-".length());
             int cbVersions = getDistance("craftbukkit", version.substring(0, version.indexOf(' ')));
