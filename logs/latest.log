@@ -1,78 +1,736 @@
-[19:30:35] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
-[19:30:35] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
-[19:30:35] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLServerTweaker
-[19:30:35] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
-[19:30:35] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_181, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_181
-[19:30:35] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
-[19:30:35] [main/ERROR] [FML]: Full: C:\Users\miner\Desktop\LavaBukkit\LavaBukkit\target\lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar
-[19:30:35] [main/ERROR] [FML]: Trimmed: c:/users/miner/desktop/lavabukkit/lavabukkit/
-[19:30:35] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
-[19:30:35] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
-[19:30:35] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
-[19:30:35] [main/INFO] [FML]: Ignoring missing certificate for coremod LavaPlugin (co.matrixdevelopment.lava.asm.LavaPlugin), we are in deobf and it's a forge core plugin
-[19:30:35] [main/INFO] [FML]: Searching C:\Users\miner\Desktop\LavaBukkit\LavaBukkit\.\mods for mods
-[19:30:35] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[19:30:35] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[19:30:35] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[19:30:35] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
-[19:30:35] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[19:30:36] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
-[19:30:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[19:30:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
-[19:30:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
-[19:30:36] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
-[19:30:36] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
-[19:30:36] [main/ERROR] [LaunchWrapper]: Unable to launch
-java.lang.ClassNotFoundException: net.minecraft.server.MinecraftServer
-	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
+[21:56:19] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[21:56:19] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[21:56:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[21:56:19] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2768 for Minecraft 1.12.2 loading
+[21:56:19] [main/INFO] [FML]: Java is Java HotSpot(TM) 64-Bit Server VM, version 1.8.0_181, running on Windows 10:amd64:10.0, installed at C:\Program Files\Java\jre1.8.0_181
+[21:56:19] [main/ERROR] [FML]: Apache Maven library folder was not in the format expected. Using default libraries directory.
+[21:56:19] [main/ERROR] [FML]: Full: C:\Users\miner\Desktop\LavaBukkit\LavaBukkit\target\lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar
+[21:56:19] [main/ERROR] [FML]: Trimmed: c:/users/miner/desktop/lavabukkit/lavabukkit/
+[21:56:19] [main/INFO] [FML]: Managed to load a deobfuscated Minecraft name- we are in a deobfuscated environment. Skipping runtime deobfuscation
+[21:56:19] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin), we are in deobf and it's a forge core plugin
+[21:56:19] [main/INFO] [FML]: Ignoring missing certificate for coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin), we are in deobf and it's a forge core plugin
+[21:56:19] [main/INFO] [FML]: Ignoring missing certificate for coremod LavaPlugin (co.matrixdevelopment.lava.asm.LavaPlugin), we are in deobf and it's a forge core plugin
+[21:56:19] [main/INFO] [FML]: Searching C:\Users\miner\Desktop\LavaBukkit\LavaBukkit\.\mods for mods
+[21:56:19] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:56:19] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[21:56:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:56:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[21:56:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[21:56:20] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[21:56:20] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[21:56:20] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[21:56:20] [main/ERROR] [LaunchWrapper]: A critical problem occurred registering the ASM transformer class net.minecraftforge.fml.common.asm.transformers.ModAccessTransformer
+java.lang.ClassNotFoundException: net/minecraftforge/fml/common/asm/transformers/ModAccessTransformer
 	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_181]
 	at java.lang.Class.forName(Unknown Source) ~[?:1.8.0_181]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:131) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.asm.transformers.ModAccessTransformer.<init>(ModAccessTransformer.java:46) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Constructor.newInstance(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.newInstance(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.relauncher.DebuggableLaunchLoader.registerTransformer(DebuggableLaunchLoader.java:145) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.launcher.FMLDeobfTweaker.injectIntoClassLoader(FMLDeobfTweaker.java:45) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.relauncher.DebuggableLaunch.launch(DebuggableLaunch.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.relauncher.DebuggableLaunch.main(DebuggableLaunch.java:33) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
 	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
-	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.run(ServerLaunchWrapper.java:70) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
-	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.main(ServerLaunchWrapper.java:34) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
-Caused by: java.lang.NoClassDefFoundError: net/minecraft/command/ICommandSender
-	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_181]
-	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
-	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
-	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
-	... 12 more
-Caused by: java.lang.ClassNotFoundException: net.minecraft.command.ICommandSender
-	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
-	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_181]
-	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
-	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
-	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
-	... 12 more
-Caused by: java.lang.NullPointerException
-	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
-	at java.lang.ClassLoader.loadClass(Unknown Source) ~[?:1.8.0_181]
-	at java.lang.ClassLoader.defineClass1(Native Method) ~[?:1.8.0_181]
-	at java.lang.ClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
-	at java.security.SecureClassLoader.defineClass(Unknown Source) ~[?:1.8.0_181]
-	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:182) ~[lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
-	... 12 more
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: java.lang.reflect.InvocationTargetException
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at java.lang.reflect.Method.invoke(Unknown Source)
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.run(ServerLaunchWrapper.java:70)
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:main:34]: 	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.main(ServerLaunchWrapper.java:34)
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: Caused by: net.minecraftforge.fml.relauncher.FMLSecurityManager$ExitTrappedException
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at net.minecraftforge.fml.relauncher.FMLSecurityManager.checkPermission(FMLSecurityManager.java:52)
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at java.lang.SecurityManager.checkExit(Unknown Source)
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at java.lang.Runtime.exit(Unknown Source)
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at java.lang.System.exit(Unknown Source)
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at net.minecraft.launchwrapper.Launch.launch(Launch.java:138)
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
-[19:30:36] [main/INFO] [STDERR]: [net.minecraftforge.fml.relauncher.ServerLaunchWrapper:run:75]: 	... 6 more
+	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.run(ServerLaunchWrapper.java:63) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.relauncher.ServerLaunchWrapper.main(ServerLaunchWrapper.java:33) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+[21:56:20] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[21:56:20] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[21:56:20] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
+[21:56:20] [main/INFO] [STDOUT]: [org.bukkit.craftbukkit.Main:main:194]: Loading libraries, please wait...
+[21:56:21] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Starting minecraft server version 1.12.2
+[21:56:21] [Server thread/INFO] [FML]: MinecraftForge v14.23.5.2768 Initialized
+[21:56:21] [Server thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[21:56:21] [Server thread/INFO] [FML]: Replaced 1036 ore ingredients
+[21:56:21] [Server thread/INFO] [FML]: Searching C:\Users\miner\Desktop\LavaBukkit\LavaBukkit\.\mods for mods
+[21:56:24] [Server thread/INFO] [FML]: Forge Mod Loader has identified 4 mods to load
+[21:56:24] [Server thread/WARN] [FML]: Missing English translation for FML: assets/fml/lang/en_us.lang
+[21:56:24] [Server thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge] at CLIENT
+[21:56:24] [Server thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, FML, forge] at SERVER
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.fml.common.gameevent.PlayerEvent$PlayerLoggedInEvent public void net.minecraftforge.common.ForgeModContainer.playerLogin(net.minecraftforge.fml.common.gameevent.PlayerEvent$PlayerLoggedInEvent)
+java.lang.NoSuchMethodException: net.minecraftforge.fml.common.gameevent.PlayerEvent$PlayerLoggedInEvent.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.modConstruction(ForgeModContainer.java:470) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:536) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:101) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.fml.client.event.ConfigChangedEvent$OnConfigChangedEvent public void net.minecraftforge.common.ForgeModContainer.onConfigChanged(net.minecraftforge.fml.client.event.ConfigChangedEvent$OnConfigChangedEvent)
+java.lang.NoSuchMethodException: net.minecraftforge.fml.client.event.ConfigChangedEvent$OnConfigChangedEvent.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.modConstruction(ForgeModContainer.java:470) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:536) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:101) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.event.RegistryEvent$Register public void net.minecraftforge.common.ForgeModContainer.registrItems(net.minecraftforge.event.RegistryEvent$Register)
+java.lang.NoSuchMethodException: net.minecraftforge.event.RegistryEvent$Register.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.modConstruction(ForgeModContainer.java:470) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:536) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:101) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.event.RegistryEvent$MissingMappings public void net.minecraftforge.common.ForgeModContainer.missingMapping(net.minecraftforge.event.RegistryEvent$MissingMappings)
+java.lang.NoSuchMethodException: net.minecraftforge.event.RegistryEvent$MissingMappings.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.modConstruction(ForgeModContainer.java:470) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:536) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:101) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Server thread/INFO] [FML]: Processing ObjectHolder annotations
+[21:56:25] [Server thread/INFO] [FML]: Found 1168 ObjectHolder annotations
+[21:56:25] [Server thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[21:56:25] [Server thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.fml.common.gameevent.TickEvent$ClientTickEvent public void net.minecraftforge.common.ForgeInternalHandler.checkSettings(net.minecraftforge.fml.common.gameevent.TickEvent$ClientTickEvent)
+java.lang.NoSuchMethodException: net.minecraftforge.fml.common.gameevent.TickEvent$ClientTickEvent.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.preInit(ForgeModContainer.java:480) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:569) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:102) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.fml.common.gameevent.TickEvent$ServerTickEvent public void net.minecraftforge.common.ForgeInternalHandler.onServerTick(net.minecraftforge.fml.common.gameevent.TickEvent$ServerTickEvent)
+java.lang.NoSuchMethodException: net.minecraftforge.fml.common.gameevent.TickEvent$ServerTickEvent.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.preInit(ForgeModContainer.java:480) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:569) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:102) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.event.world.WorldEvent$Load public void net.minecraftforge.common.ForgeInternalHandler.onDimensionLoad(net.minecraftforge.event.world.WorldEvent$Load)
+java.lang.NoSuchMethodException: net.minecraftforge.event.world.WorldEvent$Load.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.preInit(ForgeModContainer.java:480) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:569) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:102) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.event.world.WorldEvent$Save public void net.minecraftforge.common.ForgeInternalHandler.onDimensionSave(net.minecraftforge.event.world.WorldEvent$Save)
+java.lang.NoSuchMethodException: net.minecraftforge.event.world.WorldEvent$Save.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.preInit(ForgeModContainer.java:480) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:569) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:102) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.event.world.WorldEvent$Unload public void net.minecraftforge.common.ForgeInternalHandler.onDimensionUnload(net.minecraftforge.event.world.WorldEvent$Unload)
+java.lang.NoSuchMethodException: net.minecraftforge.event.world.WorldEvent$Unload.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.preInit(ForgeModContainer.java:480) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:569) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:102) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.event.entity.EntityJoinWorldEvent public void net.minecraftforge.common.ForgeInternalHandler.onEntityJoinWorld(net.minecraftforge.event.entity.EntityJoinWorldEvent)
+java.lang.NoSuchMethodException: net.minecraftforge.event.entity.EntityJoinWorldEvent.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.preInit(ForgeModContainer.java:480) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:569) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:102) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Server thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.fml.common.gameevent.PlayerEvent$PlayerLoggedInEvent public void net.minecraftforge.common.ForgeModContainer.playerLogin(net.minecraftforge.fml.common.gameevent.PlayerEvent$PlayerLoggedInEvent)
+java.lang.NoSuchMethodException: net.minecraftforge.fml.common.gameevent.PlayerEvent$PlayerLoggedInEvent.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.preInit(ForgeModContainer.java:486) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:569) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:102) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.fml.client.event.ConfigChangedEvent$OnConfigChangedEvent public void net.minecraftforge.common.ForgeModContainer.onConfigChanged(net.minecraftforge.fml.client.event.ConfigChangedEvent$OnConfigChangedEvent)
+java.lang.NoSuchMethodException: net.minecraftforge.fml.client.event.ConfigChangedEvent$OnConfigChangedEvent.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.preInit(ForgeModContainer.java:486) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:569) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:102) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.event.RegistryEvent$Register public void net.minecraftforge.common.ForgeModContainer.registrItems(net.minecraftforge.event.RegistryEvent$Register)
+java.lang.NoSuchMethodException: net.minecraftforge.event.RegistryEvent$Register.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.preInit(ForgeModContainer.java:486) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:569) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:102) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Server thread/ERROR] [FML]: Error registering event handler: Wrapped{forge} class net.minecraftforge.event.RegistryEvent$MissingMappings public void net.minecraftforge.common.ForgeModContainer.missingMapping(net.minecraftforge.event.RegistryEvent$MissingMappings)
+java.lang.NoSuchMethodException: net.minecraftforge.event.RegistryEvent$MissingMappings.<init>()
+	at java.lang.Class.getConstructor0(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.Class.getConstructor(Unknown Source) ~[?:1.8.0_181]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:128) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.eventhandler.EventBus.register(EventBus.java:112) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.common.ForgeModContainer.preInit(ForgeModContainer.java:486) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:218) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:196) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_181]
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:87) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:144) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:72) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:398) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:67) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:108) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at com.google.common.eventbus.EventBus.post(EventBus.java:212) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:135) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.Loader.preinitializeMods(Loader.java:569) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:102) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.dedicated.DedicatedServer.init(DedicatedServer.java:172) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:666) [lavabukkit-1.12.2-R0.1-SNAPSHOT-shaded.jar:git-LavaBukkit-unknown]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_181]
+[21:56:25] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[21:56:25] [Server thread/INFO] [FML]: Applying holder lookups
+[21:56:25] [Server thread/INFO] [FML]: Holder lookups applied
+[21:56:25] [Server thread/INFO] [FML]: Applying holder lookups
+[21:56:25] [Server thread/INFO] [FML]: Holder lookups applied
+[21:56:25] [Server thread/INFO] [FML]: Applying holder lookups
+[21:56:25] [Server thread/INFO] [FML]: Holder lookups applied
+[21:56:25] [Server thread/INFO] [FML]: Applying holder lookups
+[21:56:25] [Server thread/INFO] [FML]: Holder lookups applied
+[21:56:25] [Server thread/INFO] [FML]: Injecting itemstacks
+[21:56:25] [Server thread/INFO] [FML]: Itemstack injection complete
+[21:56:25] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Loading properties
+[21:56:25] [Server thread/WARN] [net.minecraft.server.dedicated.PropertyManager]: server.properties does not exist
+[21:56:25] [Server thread/INFO] [net.minecraft.server.dedicated.PropertyManager]: Generating new properties file
+[21:56:25] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Default game type: SURVIVAL
+[21:56:25] [Server thread/INFO] [Minecraft]: This server is running CraftBukkit version git-LavaBukkit-unknown (MC: 1.12.2) (Implementing API version Unknown-Version)
+[21:56:25] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Generating keypair
+[21:56:25] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Starting Minecraft server on *:25565
+[21:56:25] [Server thread/INFO] [net.minecraft.network.NetworkSystem]: Using default channel type
+[21:56:25] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: UP_TO_DATE Target: null
+[21:56:26] [Server thread/INFO] [FML]: Applying holder lookups
+[21:56:26] [Server thread/INFO] [FML]: Holder lookups applied
+[21:56:26] [Server thread/INFO] [FML]: Injecting itemstacks
+[21:56:26] [Server thread/INFO] [FML]: Itemstack injection complete
+[21:56:26] [Server thread/INFO] [FML]: Forge Mod Loader has successfully loaded 4 mods
+[21:56:26] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Preparing level "world"
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command time with permission node net.minecraft.command.CommandTime
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command gamemode with permission node net.minecraft.command.CommandGameMode
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command difficulty with permission node net.minecraft.command.CommandDifficulty
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command defaultgamemode with permission node net.minecraft.command.CommandDefaultGameMode
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command kill with permission node net.minecraft.command.CommandKill
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command toggledownfall with permission node net.minecraft.command.CommandToggleDownfall
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command weather with permission node net.minecraft.command.CommandWeather
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command xp with permission node net.minecraft.command.CommandXP
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command tp with permission node net.minecraft.command.CommandTP
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command teleport with permission node net.minecraft.command.server.CommandTeleport
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command give with permission node net.minecraft.command.CommandGive
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command replaceitem with permission node net.minecraft.command.CommandReplaceItem
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command stats with permission node net.minecraft.command.CommandStats
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command effect with permission node net.minecraft.command.CommandEffect
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command enchant with permission node net.minecraft.command.CommandEnchant
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command particle with permission node net.minecraft.command.CommandParticle
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command me with permission node net.minecraft.command.server.CommandEmote
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command seed with permission node net.minecraft.command.CommandShowSeed
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command help with permission node net.minecraft.command.CommandHelp
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command debug with permission node net.minecraft.command.CommandDebug
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command tell with permission node net.minecraft.command.server.CommandMessage
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command say with permission node net.minecraft.command.server.CommandBroadcast
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command spawnpoint with permission node net.minecraft.command.CommandSetSpawnpoint
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command setworldspawn with permission node net.minecraft.command.server.CommandSetDefaultSpawnpoint
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command gamerule with permission node net.minecraft.command.CommandGameRule
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command clear with permission node net.minecraft.command.CommandClearInventory
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command testfor with permission node net.minecraft.command.server.CommandTestFor
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command spreadplayers with permission node net.minecraft.command.CommandSpreadPlayers
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command playsound with permission node net.minecraft.command.CommandPlaySound
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command scoreboard with permission node net.minecraft.command.server.CommandScoreboard
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command execute with permission node net.minecraft.command.CommandExecuteAt
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command trigger with permission node net.minecraft.command.CommandTrigger
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command advancement with permission node net.minecraft.command.AdvancementCommand
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command recipe with permission node net.minecraft.command.RecipeCommand
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command summon with permission node net.minecraft.command.server.CommandSummon
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command setblock with permission node net.minecraft.command.server.CommandSetBlock
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command fill with permission node net.minecraft.command.CommandFill
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command clone with permission node net.minecraft.command.CommandClone
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command testforblocks with permission node net.minecraft.command.CommandCompare
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command blockdata with permission node net.minecraft.command.CommandBlockData
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command testforblock with permission node net.minecraft.command.server.CommandTestForBlock
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command tellraw with permission node net.minecraft.command.server.CommandMessageRaw
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command worldborder with permission node net.minecraft.command.CommandWorldBorder
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command title with permission node net.minecraft.command.CommandTitle
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command entitydata with permission node net.minecraft.command.CommandEntityData
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command stopsound with permission node net.minecraft.command.CommandStopSound
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command locate with permission node net.minecraft.command.CommandLocate
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command reload with permission node net.minecraft.command.CommandReload
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command function with permission node net.minecraft.command.CommandFunction
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command op with permission node net.minecraft.command.server.CommandOp
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command deop with permission node net.minecraft.command.server.CommandDeOp
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command stop with permission node net.minecraft.command.server.CommandStop
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command save-all with permission node net.minecraft.command.server.CommandSaveAll
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command save-off with permission node net.minecraft.command.server.CommandSaveOff
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command save-on with permission node net.minecraft.command.server.CommandSaveOn
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command ban-ip with permission node net.minecraft.command.server.CommandBanIp
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command pardon-ip with permission node net.minecraft.command.server.CommandPardonIp
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command ban with permission node net.minecraft.command.server.CommandBanPlayer
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command banlist with permission node net.minecraft.command.server.CommandListBans
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command pardon with permission node net.minecraft.command.server.CommandPardonPlayer
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command kick with permission node net.minecraft.command.CommandServerKick
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command list with permission node net.minecraft.command.server.CommandListPlayers
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command whitelist with permission node net.minecraft.command.server.CommandWhitelist
+[21:56:26] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command setidletimeout with permission node net.minecraft.command.CommandSetPlayerTimeout
+[21:56:26] [Server thread/INFO] [Minecraft]: -------- World Settings For [world] --------
+[21:56:26] [Server thread/INFO] [FML]: Loading dimension 0 (world) (net.minecraft.server.dedicated.DedicatedServer@11ac1089)
+[21:56:26] [Server thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 488 advancements
+[21:56:27] [Server thread/INFO] [Minecraft]: -------- World Settings For [world_nether] --------
+[21:56:27] [Server thread/INFO] [FML]: Loading dimension -1 (world_nether) (net.minecraft.server.dedicated.DedicatedServer@11ac1089)
+[21:56:27] [Server thread/INFO] [Minecraft]: -------- World Settings For [world_the_end] --------
+[21:56:27] [Server thread/INFO] [FML]: Loading dimension 1 (world_the_end) (net.minecraft.server.dedicated.DedicatedServer@11ac1089)
+[21:56:27] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 0 (Seed: -2893676818824136403)
+[21:56:28] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 7%
+[21:56:29] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 16%
+[21:56:30] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 26%
+[21:56:31] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 35%
+[21:56:32] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 46%
+[21:56:33] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 55%
+[21:56:34] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 66%
+[21:56:35] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 73%
+[21:56:36] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 81%
+[21:56:37] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 90%
+[21:56:38] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 97%
+[21:56:39] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 1 (Seed: -2893676818824136403)
+[21:56:40] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 18%
+[21:56:41] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 37%
+[21:56:42] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 54%
+[21:56:43] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 72%
+[21:56:44] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 90%
+[21:56:45] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing start region for level 2 (Seed: -2893676818824136403)
+[21:56:46] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Preparing spawn area: 54%
+[21:56:46] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Done (20.623s)! For help, type "help" or "?"
+[21:56:47] [Server thread/INFO] [net.minecraft.command.CommandHandler]: Registered command forge with permission node net.minecraftforge.server.command.ForgeCommand
+[21:56:49] [Server thread/INFO] [FML]: Unloading dimension -1
+[21:56:49] [Server thread/INFO] [FML]: Unloading dimension 1
+[21:59:23] [User Authenticator #1/INFO] [net.minecraft.server.network.NetHandlerLoginServer]: UUID of player Grsan is 8aaa7e5d-4637-46d6-9bc8-b84a935af50d
+[21:59:23] [Netty Server IO #1/INFO] [FML]: Client protocol version 2
+[21:59:23] [Netty Server IO #1/INFO] [FML]: Client attempting to join with 4 mods : minecraft@1.12.2,FML@8.0.99.99,forge@14.23.5.2784,mcp@9.42
+[21:59:23] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[21:59:23] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: Grsan[/127.0.0.1:4451] logged in with entity id 2523 at ([world]-79.5, 72.0, 260.5)
+[21:59:29] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /spigot
+[21:59:32] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /forge
+[21:59:35] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Opped Grsan
+[21:59:37] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /spigot
+[21:59:39] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /forge
+[21:59:42] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /forge tps
+[22:00:36] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /spigot
+[22:00:38] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /bukkit
+[22:00:39] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /forge
+[22:00:42] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /forge tps
+[22:00:43] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /mods
+[22:00:47] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /help
+[22:01:21] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /help forge
+[22:01:24] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /fml
+[22:01:26] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /forge
+[22:01:31] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /forge dimensions
+[22:02:47] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /gmc
+[22:02:50] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: Grsan issued server command: /gamemode c
+[22:02:50] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Grsan: Set own game mode to Creative Mode]

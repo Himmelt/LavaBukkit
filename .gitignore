@@ -9,3 +9,14 @@
 .project
 /logs
 /logs/*.log
+/crash-reports
+*.yml
+/mods
+*.json
+*.cfg
+*.properties
+eula.txt
+*.dat
+*.dat_old
+*.mca
+*.lock

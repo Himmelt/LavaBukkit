@@ -26,20 +26,18 @@ import java.util.List;
 import net.minecraft.launchwrapper.LaunchClassLoader;
 import net.minecraftforge.common.ForgeVersion;
 
-public class FMLInjectionData
-{
-    static File minecraftHome;
-    static String major;
-    static String minor;
-    static String rev;
-    static String build;
-    static String mccversion;
-    static String mcpversion;
+public class FMLInjectionData {
+    public static File minecraftHome;
+    public static String major;
+    public static String minor;
+    public static String rev;
+    public static String build;
+    public static String mccversion;
+    public static String mcpversion;
 
     public static final List<String> containers = new ArrayList<String>();
 
-    static void build(File mcHome, LaunchClassLoader classLoader)
-    {
+    public static void build(File mcHome, DebuggableLaunchLoader classLoader) {
         minecraftHome = mcHome;
         major = String.valueOf(ForgeVersion.majorVersion);
         minor = String.valueOf(ForgeVersion.minorVersion);
@@ -49,12 +47,11 @@ public class FMLInjectionData
         mcpversion = ForgeVersion.mcpVersion;
     }
 
-    static String debfuscationDataName()
-    {
-        return "/deobfuscation_data-"+mccversion+".lzma";
+    public static String debfuscationDataName() {
+        return "/deobfuscation_data-" + mccversion + ".lzma";
     }
-    public static Object[] data()
-    {
+
+    public static Object[] data() {
         return new Object[] { major, minor, rev, build, mccversion, mcpversion, minecraftHome, containers };
     }
 }
