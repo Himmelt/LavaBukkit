@@ -31,4 +31,4 @@ Feel free to drop in on the Matrix Development Discord chat [here](https://matri
 
 ## Donate/Support
 
-You can pledge to support GMatrixGames and his team's worl through a monthly [Patreon](https://www.patreon.com/matrixdevteam) donation or a one-time [PayPal](http://paypal.me/GMatrixCodes) donation.
+You can pledge to support GMatrixGames and his team's work through a one-time [PayPal](http://paypal.me/GMatrixCodes) donation.
