@@ -1,8 +1,8 @@
 # LavaBukkit
 <div style="text-align:center"><img src ="https://matrixdevteam.ml/inc/img/LavaBukkitLogo.png" /></div>
 
-![](https://img.shields.io/github/last-commit/matrixdevteam/lavabukkit.svg?style=popout-square)
-![](https://img.shields.io/github/stars/matrixdevteam/lavabukkit.svg?label=Stars&style=popout-square)
+![](https://img.shields.io/github/last-commit/MatrixDevTeam/LavaBukkit.svg?style=popout-square)
+![](https://img.shields.io/github/stars/MatrixDevTeam/LavaBukkit.svg?label=Stars&style=popout-square)
 [![](https://img.shields.io/discord/491638768831299584.svg?label=Join%20us%20on%20Discord&style=popout-square)](https://matrixdevteam.ml/discord)
 ![](https://img.shields.io/github/license/matrixdevteam/lavabukkit.svg?style=popout-square)
 
