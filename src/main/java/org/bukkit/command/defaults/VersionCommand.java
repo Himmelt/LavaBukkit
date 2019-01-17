@@ -29,6 +29,11 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+// LB Start
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+// LB End
+
 public class VersionCommand extends BukkitCommand {
     public VersionCommand(String name) {
         super(name);
@@ -44,7 +49,7 @@ public class VersionCommand extends BukkitCommand {
         if (!testPermission(sender)) return true;
 
         if (args.length == 0) {
-            sender.sendMessage("This server is running " + Bukkit.getName() + " version " + Bukkit.getVersion() + " with Forge version" + ForgeVersion.getVersion() + " (Implementing API version " + Bukkit.getBukkitVersion() + ")");
+            sender.sendMessage("This server is running " + Bukkit.getName() + " version " + Bukkit.getVersion() + " with Forge version " + ForgeVersion.getVersion() + " (Implementing API version " + Bukkit.getBukkitVersion() + ")");
             sendVersion(sender);
         } else {
             StringBuilder name = new StringBuilder();
@@ -180,20 +185,22 @@ public class VersionCommand extends BukkitCommand {
     private void obtainVersion() {
         String version = Bukkit.getVersion();
         if (version == null) version = "Custom";
-        if (version.startsWith("git-Spigot-")) {
-            String[] parts = version.substring("git-Spigot-".length()).split("-");
-            int cbVersions = getDistance("craftbukkit", parts[1].substring(0, parts[1].indexOf(' ')));
-            int spigotVersions = getDistance("spigot", parts[0]);
-            if (cbVersions == -1 || spigotVersions == -1) {
-                setVersionMessage("Error obtaining version information");
-            } else {
-                if (cbVersions == 0 && spigotVersions == 0) {
+        if (version.startsWith("git-LavaBukkit-")) {
+            String[] parts = version.substring("git-LavaBukkit-".length()).split("[-\\s]");
+            int distance = getDistance(null, parts[0]);
+            switch (distance) {
+                case -1:
+                    setVersionMessage("Error obtaining version information");
+                    break;
+                case 0:
                     setVersionMessage("You are running the latest version");
-                } else {
-                    setVersionMessage("You are " + (cbVersions + spigotVersions) + " version(s) behind");
-                }
+                    break;
+                case -2:
+                    setVersionMessage("Unknown version");
+                    break;
+                default:
+                    setVersionMessage("You are " + distance + " version(s) behind");
             }
-
         } else if (version.startsWith("git-Bukkit-")) {
             version = version.substring("git-Bukkit-".length());
             int cbVersions = getDistance("craftbukkit", version.substring(0, version.indexOf(' ')));
@@ -227,8 +234,19 @@ public class VersionCommand extends BukkitCommand {
         }
     }
 
-    private static int getDistance(String repo, String hash) {
-        try {
+	// LB Start - Taken from Paper / Modified by GMatrixGames
+    private static int getDistance(String repo, String verInfo) {
+      /*  try {
+            int currentVer = Integer.decode(verInfo);
+            return getFromJenkins(currentVer);
+        } catch (NumberFormatException ex) {
+            verInfo = verInfo.replace("\"", "");
+            return getFromRepo("MatrixDevTeam/LavaBukkit", verInfo);
+        } */
+		
+		verInfo = verInfo.replace("\"", "");
+        return getFromRepo("MatrixDevTeam/LavaBukkit", verInfo);
+            /*
             BufferedReader reader = Resources.asCharSource(
                     new URL("https://hub.spigotmc.org/stash/rest/api/1.0/projects/SPIGOT/repos/" + repo + "/commits?since=" + URLEncoder.encode(hash, "UTF-8") + "&withCounts=true"),
                     Charsets.UTF_8
@@ -242,9 +260,59 @@ public class VersionCommand extends BukkitCommand {
             } finally {
                 reader.close();
             }
+            */
+    }
+	
+	private static int getFromJenkins(int currentVer) {
+        try {
+            BufferedReader reader = Resources.asCharSource(
+                    new URL("https://ci.destroystokyo.com/job/Paper/lastSuccessfulBuild/buildNumber"), // Paper
+                    Charsets.UTF_8
+            ).openBufferedStream();
+            try {
+                int newVer = Integer.decode(reader.readLine());
+                return newVer - currentVer;
+            } catch (NumberFormatException ex) {
+                ex.printStackTrace();
+                return -2;
+            } finally {
+                reader.close();
+            }
         } catch (IOException e) {
             e.printStackTrace();
             return -1;
         }
     }
+	
+	// Contributed by Techcable <Techcable@outlook.com> in GH PR #65 of Paper / Modified by GMatrixGames
+    private static final String BRANCH = "master";
+    private static int getFromRepo(String repo, String hash) {
+        try {
+            HttpURLConnection connection = (HttpURLConnection) new URL("https://api.github.com/repos/" + repo + "/compare/" + BRANCH + "..." + hash).openConnection();
+            connection.connect();
+            if (connection.getResponseCode() == HttpURLConnection.HTTP_NOT_FOUND) return -2; // Unknown commit
+            try (
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(connection.getInputStream(), Charsets.UTF_8))
+            ) {
+                JSONObject obj = (JSONObject) new JSONParser().parse(reader);
+                String status = (String) obj.get("status");
+                switch (status) {
+                    case "identical":
+                        return 0;
+                    case "behind":
+                        return ((Number) obj.get("behind_by")).intValue();
+                    default:
+                        return -1;
+                }
+            } catch (ParseException | NumberFormatException e) {
+                e.printStackTrace();
+                return -1;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+            return -1;
+        }
+    }
+	
+	// MB End
 }

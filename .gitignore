@@ -21,9 +21,15 @@ eula.txt
 *.dat_old
 *.mca
 *.lock
+<<<<<<< HEAD
 /.gradle
 **/.gradle
 /bin
 /build
 .classpath
 .factorypath
+=======
+/.classpath
+/.vscode
+/.factorypath
+>>>>>>> origin
