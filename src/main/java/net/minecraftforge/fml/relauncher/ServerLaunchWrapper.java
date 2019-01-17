@@ -42,6 +42,8 @@ public class ServerLaunchWrapper {
             // Set this early so we don't need to reconfigure later
             System.setProperty("log4j.configurationFile", "log4j2_server.xml");
         }
+        System.setProperty("log4j.configurationFile", "log4j2_server.xml");
+        System.out.println(System.getProperty("log4j.configurationFile"));
         Class<?> launchwrapper = null;
         try {
             launchwrapper = Class.forName("net.minecraftforge.fml.relauncher.DebuggableLaunch", true,

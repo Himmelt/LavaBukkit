@@ -1,0 +1,7 @@
+sourceSets {
+    main.java.srcDir 'src/main/start'
+    main.java.srcDir '/C:/Users/miner/Desktop/LavaBukkit/LavaBukkit/src/main/java/'
+    main.resources.srcDir '/C:/Users/miner/Desktop/LavaBukkit/LavaBukkit/src/main/resources/'
+    test.java.srcDir '/C:/Users/miner/Desktop/LavaBukkit/LavaBukkit/src/test/java/'
+    test.resources.srcDir '/C:/Users/miner/Desktop/LavaBukkit/LavaBukkit/src/test/resources/'
+}

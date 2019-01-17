@@ -20,3 +20,7 @@ eula.txt
 *.dat_old
 *.mca
 *.lock
+/.gradle
+**/.gradle
+/bin
+/build

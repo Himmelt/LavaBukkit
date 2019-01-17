@@ -780,7 +780,7 @@ public class Loader {
         if (fmlBrandingProperties == null) {
             Properties loaded = new Properties();
             try {
-                loaded.load(getClass().getClassLoader().getResourceAsStream("fmlbranding.properties"));
+                loaded.load(this.getClass().getClassLoader().getResourceAsStream("fmlbranding.properties"));
             } catch (Exception e) {
                 // File not found - ignore
             }
