@@ -9,6 +9,7 @@
 .project
 /logs
 /logs/*.log
+**/*.log
 /crash-reports
 *.yml
 /mods
@@ -24,3 +25,5 @@ eula.txt
 **/.gradle
 /bin
 /build
+.classpath
+.factorypath
