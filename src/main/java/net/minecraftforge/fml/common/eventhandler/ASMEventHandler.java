@@ -83,7 +83,6 @@ public class ASMEventHandler implements IEventListener {
                         handler.invoke(event);
                     }
                 } catch (ClassCastException e) {
-                    System.out.println(e);
                 }
             }
         }
@@ -169,7 +168,7 @@ public class ASMEventHandler implements IEventListener {
 
     private static class ASMClassLoader extends ClassLoader {
         private ASMClassLoader() {
-            super(ASMClassLoader.class.getClassLoader());
+            super(Thread.currentThread().getContextClassLoader());
         }
 
         public Class<?> define(String name, byte[] data) {

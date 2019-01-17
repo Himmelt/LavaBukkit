@@ -200,7 +200,7 @@ public abstract class Entity implements ICommandSender, net.minecraftforge.commo
     public boolean ignoreFrustumCheck;
     public boolean isAirBorne;
     public int timeUntilPortal;
-    protected boolean inPortal;
+    public boolean inPortal;
     protected int portalCounter;
     public int dimension;
     protected BlockPos lastPortalPos;
