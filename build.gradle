@@ -2,7 +2,7 @@ apply plugin: 'java'
 apply plugin: 'maven'
 
 group = 'co.matrixdevelopment'
-version = '1.12.2-R0.1-SNAPSHOT'
+version = '1.12.2-14.23.5.2807'
 
 description = """"""
 buildscript {
