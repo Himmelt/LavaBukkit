@@ -75,7 +75,7 @@ public class MinecraftDummyContainer extends DummyModContainer
 
         try
         {
-            Class<?> cbr = Class.forName("net.minecraft.client.ClientBrandRetriever", false, getClass().getClassLoader());
+            Class<?> cbr = Class.forName("net.minecraft.client.ClientBrandRetriever", false, Thread.currentThread().getContextClassLoader());
             Certificate[] certificates = cbr.getProtectionDomain().getCodeSource().getCertificates();
             return certificates != null ? certificates[0] : null;
         }

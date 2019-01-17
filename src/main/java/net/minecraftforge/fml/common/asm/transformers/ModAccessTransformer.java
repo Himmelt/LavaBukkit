@@ -33,16 +33,16 @@ import com.google.common.collect.Maps;
 import com.google.common.io.ByteSource;
 import com.google.common.io.CharSource;
 
-public class ModAccessTransformer extends AccessTransformer
-{
+public class ModAccessTransformer extends AccessTransformer {
     public static final Attributes.Name FMLAT = new Attributes.Name("FMLAT");
     private static Map<String, String> embedded = Maps.newHashMap(); //Needs to be primitive so that both classloaders get the same class.
+
     @SuppressWarnings("unchecked")
     public ModAccessTransformer() throws Exception
     {
         super(ModAccessTransformer.class);
         //We are in the new ClassLoader here, so we need to get the static field from the other ClassLoader.
-        ClassLoader classLoader = this.getClass().getClassLoader().getClass().getClassLoader(); //Bit odd but it gets the class loader that loaded our current class loader yay java!
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader(); //Bit odd but it gets the class loader that loaded our current class loader yay java!
         Class<?> otherClazz = Class.forName(this.getClass().getName(), true, classLoader);
         Field otherField = otherClazz.getDeclaredField("embedded");
         otherField.setAccessible(true);
@@ -60,31 +60,27 @@ public class ModAccessTransformer extends AccessTransformer
         }
     }
 
-    public static void addJar(JarFile jar, String atList) throws IOException
-    {
-        for (String at : atList.split(" "))
-        {
-            JarEntry jarEntry = jar.getJarEntry("META-INF/"+at);
-            if (jarEntry != null)
-            {
+    public static void addJar(JarFile jar, String atList) throws IOException {
+        for (String at : atList.split(" ")) {
+            JarEntry jarEntry = jar.getJarEntry("META-INF/" + at);
+            if (jarEntry != null) {
                 embedded.put(String.format("%s!META-INF/%s", jar.getName(), at),
-                        new JarByteSource(jar,jarEntry).asCharSource(StandardCharsets.UTF_8).read());
+                        new JarByteSource(jar, jarEntry).asCharSource(StandardCharsets.UTF_8).read());
             }
         }
     }
 
-    private static class JarByteSource extends ByteSource
-    {
+    private static class JarByteSource extends ByteSource {
         private JarFile jar;
         private JarEntry entry;
-        public JarByteSource(JarFile jar, JarEntry entry)
-        {
+
+        public JarByteSource(JarFile jar, JarEntry entry) {
             this.jar = jar;
             this.entry = entry;
         }
+
         @Override
-        public InputStream openStream() throws IOException
-        {
+        public InputStream openStream() throws IOException {
             return jar.getInputStream(entry);
         }
     }
