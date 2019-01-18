@@ -19,7 +19,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:3.0.78'
     }
 }
 
@@ -69,7 +69,7 @@ extractForgeResources { exclude "**/log4j2.xml" }
 
 genGradleProjects {
     addTestCompileDep "junit:junit:4.12" // TODO update unit tests to junit 5 and remove this
-    addTestCompileDep "org.junit.jupiter:junit-jupiter-api:5.0.0"
+    addTestCompileDep "org.junit.jupiter:junit-jupiter-api:5.3.2"
     addTestCompileDep "org.opentest4j:opentest4j:1.0.0" // needed for junit 5
     addTestCompileDep "org.hamcrest:hamcrest-core:1.3"
     filter { dep -> !dep.contains("scala") }
@@ -485,7 +485,7 @@ dependencies {
     compile group: 'org.apache.httpcomponents', name: 'httpcore', version:'4.4.10'
     compile group: 'it.unimi.dsi', name: 'fastutil', version:'8.2.2'
     compile group: 'org.apache.logging.log4j', name: 'log4j-api', version:'2.8.1'
-    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.8.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.11.1'
     compile group: 'org.lwjgl.lwjgl', name: 'lwjgl', version:'2.9.4-nightly-20150209'
     compile group: 'org.lwjgl.lwjgl', name: 'lwjgl_util', version:'2.9.4-nightly-20150209'
     compile group: 'com.mojang', name: 'text2speech', version:'1.10.3'
