@@ -513,5 +513,5 @@ dependencies {
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version:'5.0.0'
     testCompile group: 'org.opentest4j', name: 'opentest4j', version:'1.1.1'
     testCompile group: 'org.mockito', name: 'mockito-core', version:'2.23.4'
-    testCompile group: 'org.spongepowered', name: 'mixin', version:'0.7.10-SNAPSHOT'
+    testCompile group: 'org.spongepowered', name: 'mixin', version:'0.7.11-SNAPSHOT'
 }
