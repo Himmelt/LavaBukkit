@@ -6,11 +6,11 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Map;
 
-public class LavaPlugin implements IFMLLoadingPlugin {
+public class LavaInjector implements IFMLLoadingPlugin {
 
     @Override
     public String[] getASMTransformerClass() {
-        return new String[] {ModInventoryTransformer.class.getCanonicalName()};
+        return new String[] { ModInventoryTransformer.class.getCanonicalName() };
     }
 
     @Override
@@ -25,7 +25,8 @@ public class LavaPlugin implements IFMLLoadingPlugin {
     }
 
     @Override
-    public void injectData(Map<String, Object> data) {}
+    public void injectData(Map<String, Object> data) {
+    }
 
     @Override
     public String getAccessTransformerClass() {
