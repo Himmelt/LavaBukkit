@@ -3,7 +3,7 @@ jdk:
   - openjdk8
 install:
   - mvn clean package install -DskipTests
-  - gradlew reobfToSRG
+  - ./gradlew reobfToSRG
 after_success:
   - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
