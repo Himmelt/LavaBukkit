@@ -1,6 +1,7 @@
 # LavaBukkit
 <div style="text-align:center"><img src ="https://matrixdevteam.ml/inc/img/LavaBukkitLogo.png" /></div>
 
+[![Build Status](https://travis-ci.com/MatrixDevTeam/LavaBukkit.svg?branch=master)](https://travis-ci.com/MatrixDevTeam/LavaBukkit)
 ![](https://img.shields.io/github/last-commit/MatrixDevTeam/LavaBukkit.svg?style=popout-square)
 ![](https://img.shields.io/github/stars/MatrixDevTeam/LavaBukkit.svg?label=Stars&style=popout-square)
 [![](https://img.shields.io/discord/491638768831299584.svg?label=Join%20us%20on%20Discord&style=popout-square)](https://matrixdevteam.ml/discord)
