@@ -72,7 +72,7 @@ dependencies {
     compile group: 'com.mojang', name: 'text2speech', version:'1.10.3'
     compile group: 'net.minecraft', name: 'launchwrapper', version:'1.12'
     compile group: 'org.jline', name: 'jline', version:'3.9.0'
-    compile group: 'org.ow2.asm', name: 'asm-debug-all', version:'6.0-BETA'
+    compile group: 'org.ow2.asm', name: 'asm-debug-all', version:'6.0_BETA'
     compile group: 'com.typesafe.akka', name: 'akka-actor_2.11', version:'2.5.19'
     compile group: 'com.typesafe', name: 'config', version:'1.3.3'
     compile group: 'lzma', name: 'lzma', version:'0.0.1'
