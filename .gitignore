@@ -14,7 +14,7 @@
 *.yml
 /mods
 *.cfg
-*.properties
+server.properties
 eula.txt
 *.dat
 *.dat_old
