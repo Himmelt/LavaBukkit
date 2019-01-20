@@ -4,7 +4,7 @@ jdk:
 install:
   - mvn clean package install -DskipTests
   - chmod +x gradlew
-  - ./gradlew reobfToSRG
+  - ./gradlew reobfuscate
 after_success:
   - wget https://raw.githubusercontent.com/DiscordHooks/travis-ci-discord-webhook/master/send.sh
   - chmod +x send.sh
