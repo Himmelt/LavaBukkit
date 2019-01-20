@@ -18,7 +18,11 @@ public class LavaPlugin {
 
     }
 
-    public void dependsOn(LavaPlugin lp) {
+    protected void dependsOn(LavaPlugin lp) {
         dependencies.add(lp);
+    }
+
+    public ArrayList<LavaPlugin> getDependencies() {
+        return dependencies;
     }
 }
