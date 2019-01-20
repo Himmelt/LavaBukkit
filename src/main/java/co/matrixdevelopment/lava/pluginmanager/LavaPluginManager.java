@@ -7,8 +7,10 @@ import java.util.ArrayList;
 import co.matrixdevelopment.lava.api.LavaPlugin;
 
 public class LavaPluginManager {
-    URLClassLoader pluginLoader;
-    ArrayList<LavaPlugin> plugins = new ArrayList<>();
+    private URLClassLoader pluginLoader;
+    private ArrayList<LavaPlugin> plugins = new ArrayList<>();
+
+    private File pluginDir = new File("./lavaplugins");
 
     public LavaPluginManager(ClassLoader classLoader) {
         // pluginLoader = new URLClassLoader(urls);
@@ -20,6 +22,7 @@ public class LavaPluginManager {
     }
 
     private void discoverPlugins() {
-        System.out.println(new File(".").getAbsolutePath());
+        if (!pluginDir.exists())
+            pluginDir.mkdirs();
     }
 }
