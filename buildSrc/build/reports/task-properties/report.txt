@@ -1,0 +1,2 @@
+Warning: Task type 'org.atom.gradle.task.ReobfuscateTask': property 'classpath' is not annotated with an input or output annotation.
+Warning: Task type 'org.atom.gradle.task.ReobfuscateTask': property 'outputJar' is not annotated with an input or output annotation.
