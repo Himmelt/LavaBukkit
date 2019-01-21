@@ -5,6 +5,8 @@ import java.io.IOException;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 
 import co.matrixdevelopment.lava.api.LavaPlugin;
@@ -32,8 +34,8 @@ public class LavaPluginManager {
 
         for (File f : pluginDir.listFiles()) {
             try {
-                JarFile jf = new JarFile(f);
-                urls.add(f.toURL());
+
+                urls.add(new URL("jar:file:" + f + "!/"));
             } catch (IOException e) {
 
                 e.printStackTrace();
