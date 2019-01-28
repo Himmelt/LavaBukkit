@@ -41,7 +41,7 @@ public class ReobfuscateTask extends DefaultTask {
 
     @Getter
     @Setter
-    private File outputJar = new File(getProject().getBuildDir(), "localCache/reobfuscated.jar");
+    private File outputJar = new File(getProject().getBuildDir(), "localCache/lavabukkit-R0.1-SNAPSHOT.jar");
 
     @TaskAction
     void doTask() throws IOException {
