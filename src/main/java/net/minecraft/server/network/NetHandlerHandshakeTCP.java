@@ -7,6 +7,7 @@ import net.minecraft.network.handshake.client.C00Handshake;
 import net.minecraft.network.login.server.SPacketDisconnect;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.TextComponentString;
 import net.minecraft.util.text.TextComponentTranslation;
 
 import java.net.InetAddress;
@@ -18,6 +19,7 @@ public class NetHandlerHandshakeTCP implements INetHandlerHandshakeServer
     private final NetworkManager networkManager;
 
     private static final HashMap<InetAddress, Long> throttleTracker = new HashMap<InetAddress, Long>();
+    private static final com.google.gson.Gson gson = new com.google.gson.Gson(); // Spigot
     private static int throttleCounter = 0;
 
     public NetHandlerHandshakeTCP(MinecraftServer serverIn, NetworkManager netManager)
@@ -29,6 +31,31 @@ public class NetHandlerHandshakeTCP implements INetHandlerHandshakeServer
     public void processHandshake(C00Handshake packetIn)
     {
         if (!net.minecraftforge.fml.common.FMLCommonHandler.instance().handleServerHandshake(packetIn, this.networkManager)) return;
+
+        // Sponge Start
+        if (org.spigotmc.SpigotConfig.bungee && packetIn.getRequestedState() == EnumConnectionState.LOGIN) {
+            String[] split = packetIn.ip.split("\00\\|", 2)[0].split("\00"); // ignore any extra data
+
+            if ( split.length == 3 || split.length == 4 ) {
+                packetIn.ip = split[0];
+                networkManager.socketAddress = new java.net.InetSocketAddress(split[1], ((java.net.InetSocketAddress) networkManager.getRemoteAddress()).getPort());
+                networkManager.spoofedUUID = com.mojang.util.UUIDTypeAdapter.fromString( split[2] );
+
+                if ( split.length == 4 )
+                {
+                    networkManager.spoofedProfile = gson.fromJson(split[3], com.mojang.authlib.properties.Property[].class);
+                }
+            }
+            else
+            {
+                ITextComponent chatmessage = new TextComponentString("If you wish to use IP forwarding, please enable it in your BungeeCord config as well!");
+                this.networkManager.sendPacket(new SPacketDisconnect(chatmessage));
+                this.networkManager.closeChannel(chatmessage);
+                return;
+            }
+        }
+        // Sponge End
+
 
         switch (packetIn.getRequestedState())
         {

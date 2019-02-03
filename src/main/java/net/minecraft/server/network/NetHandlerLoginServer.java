@@ -117,7 +117,7 @@ public class NetHandlerLoginServer implements INetHandlerLoginServer, ITickable
 
     public void tryAcceptPlayer()
     {
-        // Spigot start - Moved to getOfflineProfile
+        // Spigot start - Moved to initUUID
         /*
         if (!this.loginGameProfile.isComplete())
         {
@@ -195,7 +195,7 @@ public class NetHandlerLoginServer implements INetHandlerLoginServer, ITickable
                 {
                     try
                     {
-                        loginGameProfile = getOfflineProfile(loginGameProfile);
+                        initUUID();
                         new LoginHandler().fireEvents();
                     }
                     catch (Exception ex)
@@ -329,6 +329,31 @@ public class NetHandlerLoginServer implements INetHandlerLoginServer, ITickable
         UUID uuid = UUID.nameUUIDFromBytes(("OfflinePlayer:" + original.getName()).getBytes(StandardCharsets.UTF_8));
         return new GameProfile(uuid, original.getName());
     }
+
+    // Spigot start
+    public void initUUID()
+    {
+        UUID uuid;
+        if ( networkManager.spoofedUUID != null )
+        {
+            uuid = networkManager.spoofedUUID;
+        } else
+        {
+            uuid = UUID.nameUUIDFromBytes( ( "OfflinePlayer:" + this.loginGameProfile.getName() ).getBytes( StandardCharsets.UTF_8 ) );
+        }
+
+        this.loginGameProfile = new GameProfile( uuid, this.loginGameProfile.getName() );
+
+        if (networkManager.spoofedProfile != null)
+        {
+            for ( com.mojang.authlib.properties.Property property : networkManager.spoofedProfile )
+            {
+                this.loginGameProfile.getProperties().put( property.getName(), property );
+            }
+        }
+    }
+    // Spigot end
+
 
     static enum LoginState
     {
