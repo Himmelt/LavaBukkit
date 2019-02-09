@@ -38,6 +38,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
 
+import com.mojang.authlib.properties.Property;
 import net.minecraft.crash.CrashReport;
 import net.minecraft.crash.CrashReportCategory;
 import net.minecraft.entity.item.EntityItem;
@@ -637,6 +638,19 @@ public class FMLCommonHandler
             manager.sendPacket(new SPacketDisconnect(text));
             manager.closeChannel(text);
             return false;
+        }
+
+        if (packet.getRequestedState() == EnumConnectionState.LOGIN) {
+            Property[] pr = manager.spoofedProfile;
+            if (pr != null) {
+                for (Property p : pr) {
+                    if (p.getName().equalsIgnoreCase("forgeClient") && p.getValue().equalsIgnoreCase("true")) {
+                        // Manually tell the system that we're a FML client.
+                        manager.channel().attr(NetworkRegistry.FML_MARKER).set(true);
+                        return true;
+                    }
+                }
+            }
         }
 
         if (packet.getRequestedState() == EnumConnectionState.LOGIN && (!NetworkRegistry.INSTANCE.isVanillaAccepted(Side.CLIENT) && !packet.hasFMLMarker()))

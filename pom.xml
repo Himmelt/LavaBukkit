@@ -55,6 +55,13 @@
         </repository>
     </repositories>
 
+	<distributionManagement>
+        <repository>
+            <id>matrix-repo</id>
+            <url>ftp://matrixdevteam.ml/repo</url>
+        </repository>
+    </distributionManagement>
+	
     <pluginRepositories>
         <pluginRepository>
             <id>spigotmc-public</id>
@@ -419,6 +426,13 @@
                 </excludes>
             </resource>
         </resources>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ftp</artifactId>
+				<version>2.2</version>
+			</extension>
+		</extensions>
         <plugins>
             <plugin>
                 <groupId>com.lukegb.mojo</groupId>
@@ -496,9 +510,32 @@
                                     </excludes>
                                 </filter>
                             </filters>
+							<relocations>
+								<relocation>
+									<pattern>org.bukkit.craftbukkit</pattern>
+									<shadedPattern>org.bukkit.craftbukkit.v${minecraft_version}</shadedPattern>
+									<excludes>
+										<exclude>org.bukkit.craftbukkit.Main*</exclude>
+									</excludes>
+								</relocation>
+								<relocation>
+									<pattern>net.minecraft.server</pattern>
+									<shadedPattern>net.minecraft.server.v${minecraft_version}</shadedPattern>
+								</relocation>
+							</relocations>
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <useIncrementalCompilation>false</useIncrementalCompilation>
+                </configuration>
             </plugin>
         </plugins>
         <pluginManagement>
