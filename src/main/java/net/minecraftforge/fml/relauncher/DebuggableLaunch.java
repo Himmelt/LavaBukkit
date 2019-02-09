@@ -9,18 +9,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import org.apache.http.util.LangUtils;
 import org.apache.logging.log4j.Level;
 
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import net.minecraft.launchwrapper.ITweaker;
 import net.minecraft.launchwrapper.Launch;
-import net.minecraft.launchwrapper.LaunchClassLoader;
 import net.minecraft.launchwrapper.LogWrapper;
-import java.lang.reflect.Field;
-import sun.misc.Unsafe;
 
 public class DebuggableLaunch {
     private static final String DEFAULT_TWEAK = "net.minecraft.launchwrapper.VanillaTweaker";
@@ -41,6 +36,7 @@ public class DebuggableLaunch {
 
     private void launch(String[] args) {
         blackboard = new java.util.HashMap<>();
+        Launch.blackboard = blackboard;
         OptionParser parser = new OptionParser();
         parser.allowsUnrecognizedOptions();
 
@@ -57,19 +53,19 @@ public class DebuggableLaunch {
         minecraftHome = (File) options.valueOf(gameDirOption);
         assetsDir = (File) options.valueOf(assetsDirOption);
         String profileName = (String) options.valueOf(profileOption);
-        List<String> tweakClassNames = new ArrayList(options.valuesOf(tweakClassOption));
+        List<String> tweakClassNames = new ArrayList<>(options.valuesOf(tweakClassOption));
 
-        List<String> argumentList = new ArrayList();
+        List<String> argumentList = new ArrayList<>();
 
         blackboard.put("TweakClasses", tweakClassNames);
 
         blackboard.put("ArgumentList", argumentList);
 
-        Set<String> allTweakerNames = new java.util.HashSet();
+        Set<String> allTweakerNames = new java.util.HashSet<>();
 
-        List<ITweakerDebuggable> allTweakers = new ArrayList();
+        List<ITweakerDebuggable> allTweakers = new ArrayList<>();
         try {
-            List<ITweakerDebuggable> tweakers = new ArrayList(tweakClassNames.size() + 1);
+            List<ITweakerDebuggable> tweakers = new ArrayList<>(tweakClassNames.size() + 1);
 
             blackboard.put("Tweaks", tweakers);
 
