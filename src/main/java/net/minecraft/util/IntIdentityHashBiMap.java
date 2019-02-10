@@ -6,8 +6,6 @@ import java.util.Arrays;
 import java.util.Iterator;
 import javax.annotation.Nullable;
 import net.minecraft.util.math.MathHelper;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class IntIdentityHashBiMap<K> implements IObjectIntIterable<K>
 {

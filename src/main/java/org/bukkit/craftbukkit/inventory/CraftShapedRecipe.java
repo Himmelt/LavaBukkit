@@ -2,7 +2,6 @@ package org.bukkit.craftbukkit.inventory;
 
 import java.util.Map;
 
-import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.crafting.ShapedRecipes;
 import net.minecraft.util.NonNullList;

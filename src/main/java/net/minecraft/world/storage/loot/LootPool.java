@@ -17,7 +17,6 @@ import net.minecraft.util.JsonUtils;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.storage.loot.conditions.LootCondition;
 import net.minecraft.world.storage.loot.conditions.LootConditionManager;
-import org.apache.commons.lang3.ArrayUtils;
 
 public class LootPool
 {

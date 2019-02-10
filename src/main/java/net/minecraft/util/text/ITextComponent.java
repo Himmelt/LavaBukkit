@@ -17,8 +17,6 @@ import java.util.Map.Entry;
 import javax.annotation.Nullable;
 import net.minecraft.util.EnumTypeAdapterFactory;
 import net.minecraft.util.JsonUtils;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public interface ITextComponent extends Iterable<ITextComponent>
 {

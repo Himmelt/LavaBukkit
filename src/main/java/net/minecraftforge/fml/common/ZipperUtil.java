@@ -30,8 +30,6 @@ import java.util.LinkedList;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
-import org.apache.logging.log4j.Level;
-
 import com.google.common.io.Files;
 
 /**

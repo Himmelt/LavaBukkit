@@ -23,7 +23,6 @@ import java.util.AbstractList;
 import org.bukkit.craftbukkit.util.CraftChatMessage;
 import net.md_5.bungee.api.chat.BaseComponent;
 import net.md_5.bungee.chat.ComponentSerializer;
-import net.minecraft.util.text.TextComponentBase;
 
 @DelegateDeserialization(SerializableMeta.class)
 public class CraftMetaBook extends CraftMetaItem implements BookMeta {

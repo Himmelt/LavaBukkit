@@ -50,7 +50,6 @@ import net.minecraftforge.fml.common.FMLLog;
 import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.function.Function;
-import java.util.Optional;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Lists;

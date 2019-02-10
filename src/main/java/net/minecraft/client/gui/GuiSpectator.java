@@ -7,7 +7,6 @@ import net.minecraft.client.gui.spectator.SpectatorMenu;
 import net.minecraft.client.gui.spectator.categories.SpectatorDetails;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
-import net.minecraft.client.settings.GameSettings;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.fml.relauncher.Side;

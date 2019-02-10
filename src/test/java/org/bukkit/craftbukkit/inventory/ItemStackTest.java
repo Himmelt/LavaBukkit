@@ -24,7 +24,6 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.support.AbstractTestingBase;
 import org.bukkit.util.io.BukkitObjectInputStream;
 import org.bukkit.util.io.BukkitObjectOutputStream;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;

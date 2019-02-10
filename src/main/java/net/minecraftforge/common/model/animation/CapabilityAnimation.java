@@ -19,8 +19,6 @@
 
 package net.minecraftforge.common.model.animation;
 
-import java.util.concurrent.Callable;
-
 import net.minecraft.nbt.NBTBase;
 import net.minecraft.util.EnumFacing;
 import net.minecraftforge.common.capabilities.Capability;

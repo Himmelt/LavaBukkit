@@ -1,7 +1,5 @@
 package org.bukkit.event.entity;
 
-import org.bukkit.Location;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.LivingEntity;
 
 /**

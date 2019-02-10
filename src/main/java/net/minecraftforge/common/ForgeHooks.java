@@ -45,7 +45,6 @@ import com.google.gson.JsonParseException;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementManager;
 import net.minecraft.block.Block;
-import net.minecraft.block.BlockFarmland;
 import net.minecraft.block.BlockLiquid;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

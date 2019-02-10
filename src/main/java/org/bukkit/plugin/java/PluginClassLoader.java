@@ -9,7 +9,6 @@ import java.net.URL;
 import java.net.URLClassLoader;
 import java.security.CodeSigner;
 import java.security.CodeSource;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.jar.JarEntry;

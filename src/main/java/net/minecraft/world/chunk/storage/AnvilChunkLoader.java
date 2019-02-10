@@ -1,8 +1,6 @@
 package net.minecraft.world.chunk.storage;
 
 import com.google.common.collect.Maps;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.IOException;
 import java.util.Collections;
@@ -13,7 +11,6 @@ import javax.annotation.Nullable;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityList;
-import net.minecraft.nbt.CompressedStreamTools;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;

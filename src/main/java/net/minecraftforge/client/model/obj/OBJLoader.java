@@ -34,7 +34,6 @@ import net.minecraftforge.client.model.ModelLoaderRegistry;
 import net.minecraftforge.fml.common.FMLLog;
 
 import org.apache.commons.io.IOUtils;
-import org.apache.logging.log4j.Level;
 
 /*
  * Loader for OBJ models.

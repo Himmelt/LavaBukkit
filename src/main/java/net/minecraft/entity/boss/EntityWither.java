@@ -5,7 +5,6 @@ import com.google.common.base.Predicates;
 import java.util.List;
 import javax.annotation.Nullable;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;

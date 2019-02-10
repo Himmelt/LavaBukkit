@@ -5,7 +5,6 @@ import java.util.Collection;
 import java.util.Locale;
 import java.util.Map;
 import java.util.Set;
-import java.util.Map.Entry;
 
 public class LowerStringMap<V> implements Map<String, V>
 {

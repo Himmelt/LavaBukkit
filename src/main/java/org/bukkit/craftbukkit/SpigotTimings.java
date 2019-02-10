@@ -1,8 +1,6 @@
 package org.bukkit.craftbukkit;
 
-import com.google.common.collect.Maps;
 import net.minecraft.entity.Entity;
-import net.minecraft.server.*;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import org.bukkit.plugin.java.JavaPluginLoader;
@@ -10,7 +8,6 @@ import org.spigotmc.CustomTimingsHandler;
 import org.bukkit.scheduler.BukkitTask;
 
 import java.util.HashMap;
-import java.util.Map;
 
 import org.bukkit.craftbukkit.scheduler.CraftTask;
 

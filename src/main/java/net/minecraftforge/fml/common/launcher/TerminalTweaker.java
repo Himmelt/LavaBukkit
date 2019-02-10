@@ -22,7 +22,6 @@ package net.minecraftforge.fml.common.launcher;
 import java.io.File;
 import java.util.List;
 
-import net.minecraft.launchwrapper.LaunchClassLoader;
 import net.minecraftforge.fml.relauncher.DebuggableLaunchLoader;
 import net.minecraftforge.fml.relauncher.ITweakerDebuggable;
 

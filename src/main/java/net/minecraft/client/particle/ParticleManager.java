@@ -10,7 +10,6 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Random;
 import javax.annotation.Nullable;
-import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.ActiveRenderInfo;
 import net.minecraft.client.renderer.BufferBuilder;
