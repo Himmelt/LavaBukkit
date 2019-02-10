@@ -32,7 +32,6 @@ import com.google.common.collect.Maps;
 
 import org.apache.logging.log4j.LogManager;
 
-import net.minecraft.launchwrapper.LaunchClassLoader;
 import net.minecraftforge.fml.relauncher.DebuggableLaunch;
 import net.minecraftforge.fml.relauncher.DebuggableLaunchLoader;
 import net.minecraftforge.fml.relauncher.FMLLaunchHandler;

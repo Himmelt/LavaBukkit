@@ -14,7 +14,6 @@ import java.util.UUID;
 
 import net.minecraft.block.BlockChorusFlower;
 import net.minecraft.block.BlockLeaves;
-import net.minecraft.block.BlockNewLeaf;
 import net.minecraft.block.BlockOldLeaf;
 import net.minecraft.block.BlockOldLog;
 import net.minecraft.block.BlockPlanks;

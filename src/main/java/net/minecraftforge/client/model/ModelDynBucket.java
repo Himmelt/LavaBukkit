@@ -62,7 +62,6 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Maps;
 import net.minecraftforge.fml.common.FMLLog;
-import org.apache.commons.io.IOUtils;
 
 public final class ModelDynBucket implements IModel
 {

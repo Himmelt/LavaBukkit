@@ -2,8 +2,6 @@ package net.minecraft.block;
 
 import net.minecraft.init.SoundEvents;
 import net.minecraft.util.SoundEvent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class SoundType
 {

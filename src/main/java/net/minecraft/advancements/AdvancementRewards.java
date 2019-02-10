@@ -11,7 +11,6 @@ import java.lang.reflect.Type;
 import java.util.Arrays;
 import net.minecraft.command.CommandResultStats;
 import net.minecraft.command.FunctionObject;
-import net.minecraft.command.ICommandListener;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;

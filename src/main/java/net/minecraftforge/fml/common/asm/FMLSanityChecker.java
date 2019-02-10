@@ -32,7 +32,6 @@ import java.util.jar.JarFile;
 import net.minecraftforge.fml.common.FMLLog;
 import org.apache.commons.io.IOUtils;
 
-import net.minecraft.launchwrapper.LaunchClassLoader;
 import net.minecraftforge.fml.common.CertificateHelper;
 import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.asm.transformers.deobf.FMLDeobfuscatingRemapper;

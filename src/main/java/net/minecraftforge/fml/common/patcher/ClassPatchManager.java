@@ -43,7 +43,6 @@ import com.google.common.io.ByteStreams;
 import com.google.common.io.Files;
 
 import LZMA.LzmaInputStream;
-import net.minecraft.launchwrapper.LaunchClassLoader;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.relauncher.DebuggableLaunch;
 import net.minecraftforge.fml.relauncher.DebuggableLaunchLoader;

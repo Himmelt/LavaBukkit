@@ -1,7 +1,6 @@
 package net.minecraftforge.client.model;
 
 import java.util.function.Function;
-import java.util.Optional;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;

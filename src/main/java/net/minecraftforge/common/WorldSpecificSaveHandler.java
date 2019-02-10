@@ -24,7 +24,6 @@ import java.io.IOException;
 import java.util.UUID;
 
 import net.minecraft.world.gen.structure.template.TemplateManager;
-import org.apache.logging.log4j.Level;
 
 import com.google.common.io.Files;
 
