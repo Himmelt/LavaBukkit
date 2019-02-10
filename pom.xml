@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <api.version>unknown</api.version>
         <minecraft.version>1.12.2</minecraft.version>
-        <minecraft_version>1_12_R2</minecraft_version>
+        <minecraft_version>1_12_R1</minecraft_version>
         <buildtag.prefix>git-Bukkit-</buildtag.prefix>
         <buildtag.suffix></buildtag.suffix>
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
@@ -518,10 +518,11 @@
 										<exclude>org.bukkit.craftbukkit.Main*</exclude>
 									</excludes>
 								</relocation>
+                               <!-- Until a better fix is found
 								<relocation>
 									<pattern>net.minecraft.server</pattern>
 									<shadedPattern>net.minecraft.server.v${minecraft_version}</shadedPattern>
-								</relocation>
+								</relocation> -->
 							</relocations>
                         </configuration>
                     </execution>

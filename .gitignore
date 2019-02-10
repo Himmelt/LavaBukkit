@@ -9,6 +9,7 @@
 .project
 /logs
 /logs/*.log
+buildSrc/build
 **/*.log
 /crash-reports
 *.yml
