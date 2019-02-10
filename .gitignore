@@ -9,7 +9,6 @@
 .project
 /logs
 /logs/*.log
-buildSrc/build
 **/*.log
 /crash-reports
 *.yml
@@ -22,6 +21,7 @@ eula.txt
 *.mca
 *.lock
 *.json
+*.class
 !/jsons/*.json
 *.bin
 <<<<<<< HEAD

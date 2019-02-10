@@ -518,7 +518,7 @@
 										<exclude>org.bukkit.craftbukkit.Main*</exclude>
 									</excludes>
 								</relocation>
-                               <!-- Until a better fix is found
+                                <!-- Until a better fix is found
 								<relocation>
 									<pattern>net.minecraft.server</pattern>
 									<shadedPattern>net.minecraft.server.v${minecraft_version}</shadedPattern>
