@@ -26,7 +26,6 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
 import net.minecraftforge.fml.common.FMLLog;
-import org.apache.logging.log4j.LogManager;
 
 import javax.imageio.ImageIO;
 

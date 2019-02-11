@@ -21,7 +21,6 @@ package net.minecraftforge.event.entity.living;
 
 import javax.annotation.Nullable;
 import net.minecraft.tileentity.MobSpawnerBaseLogic;
-import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.fml.common.eventhandler.Cancelable;

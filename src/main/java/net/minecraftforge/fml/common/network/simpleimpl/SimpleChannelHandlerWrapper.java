@@ -19,8 +19,6 @@
 
 package net.minecraftforge.fml.common.network.simpleimpl;
 
-import org.apache.logging.log4j.Level;
-
 import net.minecraft.network.INetHandler;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.network.FMLOutboundHandler;

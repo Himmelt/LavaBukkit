@@ -14,7 +14,6 @@ import org.apache.logging.log4j.Level;
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import net.minecraft.launchwrapper.Launch;
 import net.minecraft.launchwrapper.LogWrapper;
 
 public class DebuggableLaunch {

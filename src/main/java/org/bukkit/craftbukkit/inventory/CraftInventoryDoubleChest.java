@@ -1,7 +1,6 @@
 package org.bukkit.craftbukkit.inventory;
 
 import net.minecraft.inventory.InventoryLargeChest;
-import net.minecraft.tileentity.TileEntityLockable;
 import net.minecraft.world.ILockableContainer;
 import org.bukkit.block.DoubleChest;
 import org.bukkit.inventory.DoubleChestInventory;

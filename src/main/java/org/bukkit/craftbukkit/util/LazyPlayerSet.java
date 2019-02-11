@@ -2,8 +2,6 @@ package org.bukkit.craftbukkit.util;
 
 import java.util.HashSet;
 import java.util.List;
-
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.server.MinecraftServer;
 

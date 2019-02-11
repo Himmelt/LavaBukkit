@@ -2,7 +2,6 @@ package org.bukkit.craftbukkit.inventory;
 
 import java.util.List;
 
-import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.crafting.ShapelessRecipes;
 import net.minecraft.util.NonNullList;

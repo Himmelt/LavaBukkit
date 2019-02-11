@@ -23,10 +23,7 @@ import org.apache.logging.log4j.Level;
 
 import net.minecraft.launchwrapper.IClassNameTransformer;
 import net.minecraft.launchwrapper.IClassTransformer;
-import net.minecraft.launchwrapper.LaunchClassLoader;
 import net.minecraft.launchwrapper.LogWrapper;
-import sun.misc.Unsafe;
-import java.lang.reflect.Field;
 
 public class DebuggableLaunchLoader extends URLClassLoader {
     public static final int BUFFER_SIZE = 4096;

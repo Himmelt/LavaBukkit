@@ -13,7 +13,6 @@ import net.minecraft.command.CommandException;
 import net.minecraft.command.CommandResultStats;
 import net.minecraft.command.CommandSenderWrapper;
 import net.minecraft.command.EntitySelector;
-import net.minecraft.command.ICommandListener;
 import net.minecraft.command.ICommandSender;
 import net.minecraft.crash.CrashReport;
 import net.minecraft.crash.CrashReportCategory;

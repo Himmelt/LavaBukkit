@@ -19,8 +19,6 @@
 
 package net.minecraftforge.event;
 
-import javax.annotation.Nonnull;
-
 import net.minecraft.world.EnumDifficulty;
 import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.common.MinecraftForge;

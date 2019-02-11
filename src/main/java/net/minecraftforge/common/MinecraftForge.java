@@ -30,8 +30,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
-import org.apache.logging.log4j.Level;
-
 import com.google.common.collect.Lists;
 
 import net.minecraft.crash.CrashReport;

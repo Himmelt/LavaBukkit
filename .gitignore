@@ -24,15 +24,9 @@ eula.txt
 *.class
 !/jsons/*.json
 *.bin
-<<<<<<< HEAD
 /.gradle
 **/.gradle
 /bin
 /build
 .classpath
 .factorypath
-=======
-/.classpath
-/.vscode
-/.factorypath
->>>>>>> origin

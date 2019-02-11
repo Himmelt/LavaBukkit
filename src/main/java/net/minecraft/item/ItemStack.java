@@ -5,7 +5,6 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Multimap;
 import java.text.DecimalFormat;
 import java.util.List;
-import java.util.Map;
 import java.util.Random;
 import java.util.Map.Entry;
 import javax.annotation.Nullable;

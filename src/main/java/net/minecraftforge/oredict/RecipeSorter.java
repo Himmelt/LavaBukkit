@@ -19,7 +19,6 @@
 
 package net.minecraftforge.oredict;
 
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
@@ -33,7 +32,6 @@ import com.google.common.collect.Sets;
 import net.minecraftforge.fml.common.FMLLog;
 import net.minecraftforge.fml.common.toposort.TopologicalSort;
 import net.minecraftforge.fml.common.toposort.TopologicalSort.DirectedGraph;
-import net.minecraft.item.crafting.CraftingManager;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.item.crafting.RecipeBookCloning;
 import net.minecraft.item.crafting.RecipeFireworks;
