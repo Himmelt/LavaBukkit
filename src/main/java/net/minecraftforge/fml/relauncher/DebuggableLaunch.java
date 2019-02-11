@@ -14,7 +14,7 @@ import org.apache.logging.log4j.Level;
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import sun.misc.Unsafe;
+import net.minecraft.launchwrapper.LogWrapper;
 
 public class DebuggableLaunch {
     private static final String DEFAULT_TWEAK = "net.minecraft.launchwrapper.VanillaTweaker";
