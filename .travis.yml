@@ -1,6 +1,6 @@
 dist: xenial
 language: java
-dist: bionic
+dist: cosmic # Ubuntu 18.10 - Latest
 jdk:
   - openjdk8
 install:
