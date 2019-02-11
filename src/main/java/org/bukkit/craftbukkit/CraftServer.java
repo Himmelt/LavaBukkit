@@ -214,7 +214,7 @@ public final class CraftServer implements Server {
     private boolean unrestrictedAdvancements;
     private final List<CraftPlayer> playerView;
     public int reloadCount;
-    public LavaPluginManager lavaPluginManager = new LavaPluginManager(Thread.currentThread().getContextClassLoader());
+    public LavaPluginManager lavaPluginManager;
 
     public CraftSimpleCommandMap getCraftCommandMap() {
         return this.craftCommandMap;
@@ -366,6 +366,7 @@ public final class CraftServer implements Server {
         } else {
             pluginFolder.mkdir();
         }
+        // lavaPluginManager = new LavaPluginManager(Thread.currentThread().getContextClassLoader());
     }
 
     public void enablePlugins(PluginLoadOrder type) {
@@ -621,7 +622,13 @@ public final class CraftServer implements Server {
 
     @Override
     public long getConnectionThrottle() {
-        return this.configuration.getInt("settings.connection-throttle");
+        if (org.spigotmc.SpigotConfig.bungee) {
+            return -1;
+        } else {
+            return this.configuration.getInt("settings.connection-throttle");
+        }
+        // Spigot End
+
     }
 
     @Override
@@ -1800,26 +1807,11 @@ public final class CraftServer implements Server {
         return CraftMagicNumbers.INSTANCE;
     }
 
-    private final Spigot spigot = new Spigot() {
-        @Override
-        public YamlConfiguration getConfig() {
-            return org.spigotmc.SpigotConfig.config;
-        }
+    private final Spigot spigot=new Spigot(){@Override public YamlConfiguration getConfig(){return org.spigotmc.SpigotConfig.config;}
 
-        @Override
-        public void broadcast(BaseComponent component) {
-            for (Player player : getOnlinePlayers()) {
-                player.spigot().sendMessage(component);
-            }
-        }
+    @Override public void broadcast(BaseComponent component){for(Player player:getOnlinePlayers()){player.spigot().sendMessage(component);}}
 
-        @Override
-        public void broadcast(BaseComponent... components) {
-            for (Player player : getOnlinePlayers()) {
-                player.spigot().sendMessage(components);
-            }
-        }
-    };
+    @Override public void broadcast(BaseComponent...components){for(Player player:getOnlinePlayers()){player.spigot().sendMessage(components);}}};
 
     public Spigot spigot() {
         return spigot;

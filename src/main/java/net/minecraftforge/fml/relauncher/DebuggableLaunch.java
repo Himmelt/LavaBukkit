@@ -35,6 +35,7 @@ public class DebuggableLaunch {
 
     private void launch(String[] args) {
         blackboard = new java.util.HashMap<>();
+        Launch.blackboard = blackboard;
         OptionParser parser = new OptionParser();
         parser.allowsUnrecognizedOptions();
 
@@ -51,19 +52,19 @@ public class DebuggableLaunch {
         minecraftHome = (File) options.valueOf(gameDirOption);
         assetsDir = (File) options.valueOf(assetsDirOption);
         String profileName = (String) options.valueOf(profileOption);
-        List<String> tweakClassNames = new ArrayList(options.valuesOf(tweakClassOption));
+        List<String> tweakClassNames = new ArrayList<>(options.valuesOf(tweakClassOption));
 
-        List<String> argumentList = new ArrayList();
+        List<String> argumentList = new ArrayList<>();
 
         blackboard.put("TweakClasses", tweakClassNames);
 
         blackboard.put("ArgumentList", argumentList);
 
-        Set<String> allTweakerNames = new java.util.HashSet();
+        Set<String> allTweakerNames = new java.util.HashSet<>();
 
-        List<ITweakerDebuggable> allTweakers = new ArrayList();
+        List<ITweakerDebuggable> allTweakers = new ArrayList<>();
         try {
-            List<ITweakerDebuggable> tweakers = new ArrayList(tweakClassNames.size() + 1);
+            List<ITweakerDebuggable> tweakers = new ArrayList<>(tweakClassNames.size() + 1);
 
             blackboard.put("Tweaks", tweakers);
 

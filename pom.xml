@@ -12,7 +12,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <api.version>unknown</api.version>
         <minecraft.version>1.12.2</minecraft.version>
-        <minecraft_version>1_12_R2</minecraft_version>
+        <minecraft_version>1_12_R1</minecraft_version>
         <buildtag.prefix>git-Bukkit-</buildtag.prefix>
         <buildtag.suffix></buildtag.suffix>
         <maven.build.timestamp.format>yyyyMMdd-HHmm</maven.build.timestamp.format>
@@ -55,6 +55,13 @@
         </repository>
     </repositories>
 
+	<distributionManagement>
+        <repository>
+            <id>matrix-repo</id>
+            <url>ftp://matrixdevteam.ml/repo</url>
+        </repository>
+    </distributionManagement>
+	
     <pluginRepositories>
         <pluginRepository>
             <id>spigotmc-public</id>
@@ -365,7 +372,13 @@
             <artifactId>annotations</artifactId>
             <version>17.0.0</version>
             <scope>compile</scope>
-        </dependency>
+		</dependency>
+		<dependency>
+            <groupId>org.spongepowered</groupId>
+            <artifactId>mixin</artifactId>
+            <version>0.7.10-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency> 
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-library</artifactId>
@@ -396,12 +409,6 @@
             <version>2.24.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.spongepowered</groupId>
-            <artifactId>mixin</artifactId>
-            <version>0.7.10-SNAPSHOT</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
 
     <build>
@@ -419,6 +426,13 @@
                 </excludes>
             </resource>
         </resources>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ftp</artifactId>
+				<version>3.3.2</version>
+			</extension>
+		</extensions>
         <plugins>
             <plugin>
                 <groupId>com.lukegb.mojo</groupId>
@@ -496,9 +510,33 @@
                                     </excludes>
                                 </filter>
                             </filters>
+							<relocations>
+								<relocation>
+									<pattern>org.bukkit.craftbukkit</pattern>
+									<shadedPattern>org.bukkit.craftbukkit.v${minecraft_version}</shadedPattern>
+									<excludes>
+										<exclude>org.bukkit.craftbukkit.Main*</exclude>
+									</excludes>
+								</relocation>
+                                <!-- Until a better fix is found
+								<relocation>
+									<pattern>net.minecraft.server</pattern>
+									<shadedPattern>net.minecraft.server.v${minecraft_version}</shadedPattern>
+								</relocation> -->
+							</relocations>
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <useIncrementalCompilation>false</useIncrementalCompilation>
+                </configuration>
             </plugin>
         </plugins>
         <pluginManagement>
@@ -532,6 +570,16 @@
                                 </pluginExecution>
                             </pluginExecutions>
                         </lifecycleMappingMetadata>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.8.0</version>
+                    <configuration>        
+                        <source>1.8</source>
+                        <target>1.8</target>
+                        <useIncrementalCompilation>false</useIncrementalCompilation>
                     </configuration>
                 </plugin>
             </plugins>

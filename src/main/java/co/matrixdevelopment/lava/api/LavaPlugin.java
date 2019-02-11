@@ -3,7 +3,7 @@ package co.matrixdevelopment.lava.api;
 import java.util.ArrayList;
 
 public class LavaPlugin {
-    private ArrayList<LavaPlugin> dependencies = new ArrayList<>();
+    private ArrayList<String> dependencies = new ArrayList<>();
 
     public void onEnable() {
     }
@@ -18,11 +18,11 @@ public class LavaPlugin {
 
     }
 
-    protected void dependsOn(LavaPlugin lp) {
-        dependencies.add(lp);
+    protected void dependsOn(String pluginName) {
+        dependencies.add(pluginName);
     }
 
-    public ArrayList<LavaPlugin> getDependencies() {
+    public ArrayList<String> getDependencies() {
         return dependencies;
     }
 }

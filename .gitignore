@@ -21,6 +21,7 @@ eula.txt
 *.mca
 *.lock
 *.json
+*.class
 !/jsons/*.json
 *.bin
 /.gradle

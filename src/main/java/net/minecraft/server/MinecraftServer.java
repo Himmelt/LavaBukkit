@@ -100,6 +100,7 @@ import org.bukkit.Bukkit;
 import org.bukkit.craftbukkit.CraftServer;
 import org.bukkit.craftbukkit.Main;
 import org.bukkit.craftbukkit.SpigotTimings; // Spigot
+import org.spongepowered.asm.mixin.Mixin;
 
 public abstract class MinecraftServer implements ICommandSender, Runnable, IThreadListener, ISnooperInfo {
     public static final Logger LOGGER = LogManager.getLogger();
