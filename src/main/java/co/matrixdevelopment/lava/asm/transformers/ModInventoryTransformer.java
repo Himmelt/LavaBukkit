@@ -39,14 +39,18 @@ public class ModInventoryTransformer implements IClassTransformer {
     }
 
     private boolean implementsIInventory(byte[] basicClass) {
-        final boolean[] doesClassImplementIInventory = {false};
+        final boolean[] doesClassImplementIInventory = { false };
         ClassReader classReader = new ClassReader(basicClass);
         final ClassVisitor classVisitor = new ClassVisitor(ASM5) {
             @Override
-            public void visit(int version, int access, String name, String signature, String superName, String[] interfaces) {
+            public void visit(int version, int access, String name, String signature, String superName,
+                    String[] interfaces) {
                 Set<String> allInterfaces = Sets.newHashSet();
                 getAllInterfaces(name, allInterfaces);
-                doesClassImplementIInventory[0] = allInterfaces.stream().anyMatch(interfaceName -> interfaceName.equals("tv") || interfaceName.equals("net/minecraft/inventory/IInventory")) && (access & ACC_INTERFACE) == 0;
+                doesClassImplementIInventory[0] = allInterfaces.stream()
+                        .anyMatch(interfaceName -> interfaceName.equals("tv")
+                                || interfaceName.equals("net/minecraft/inventory/IInventory"))
+                        && (access & ACC_INTERFACE) == 0;
                 super.visit(version, access, name, signature, superName, interfaces);
             }
 
@@ -74,7 +78,8 @@ public class ModInventoryTransformer implements IClassTransformer {
         classNode.interfaces.add("co/matrixdevelopment/lava/asm/IInventoryTransactionProvider");
 
         // private List<HumanEntity> transaction;
-        classWriter.visitField(ACC_PRIVATE, "transaction", "Ljava/util/List;", "Ljava/util/List<Lorg/bukkit/entity/HumanEntity;>;", null).visitEnd();
+        classWriter.visitField(ACC_PRIVATE, "transaction", "Ljava/util/List;",
+                "Ljava/util/List<Lorg/bukkit/entity/HumanEntity;>;", null).visitEnd();
 
         /*
          * public void onOpen(CraftHumanEntity craftHumanEntity) {
@@ -83,7 +88,8 @@ public class ModInventoryTransformer implements IClassTransformer {
          *     this.transaction.add((HumanEntity)craftHumanEntity);
          * }
          */
-        MethodVisitor mv = classWriter.visitMethod(ACC_PUBLIC, "onOpen", "(Lorg/bukkit/craftbukkit/v1_12_R1/entity/CraftHumanEntity;)V", null, null);
+        MethodVisitor mv = classWriter.visitMethod(ACC_PUBLIC, "onOpen",
+                "(Lorg/bukkit/craftbukkit/v1_12_R1/entity/CraftHumanEntity;)V", null, null);
         mv.visitCode();
         mv.visitVarInsn(ALOAD, 0);
         mv.visitFieldInsn(GETFIELD, classNode.name, "transaction", "Ljava/util/List;");
@@ -113,7 +119,8 @@ public class ModInventoryTransformer implements IClassTransformer {
          *    }
          * }
          */
-        mv = classWriter.visitMethod(ACC_PUBLIC, "onClose", "(Lorg/bukkit/craftbukkit/v1_12_R1/entity/CraftHumanEntity;)V", null, null);
+        mv = classWriter.visitMethod(ACC_PUBLIC, "onClose",
+                "(Lorg/bukkit/craftbukkit/v1_12_R1/entity/CraftHumanEntity;)V", null, null);
         mv.visitCode();
         mv.visitVarInsn(ALOAD, 0);
         mv.visitFieldInsn(GETFIELD, classNode.name, "transaction", "Ljava/util/List;");
@@ -143,7 +150,8 @@ public class ModInventoryTransformer implements IClassTransformer {
          *     return this.transaction;
          * }
          */
-        mv = classWriter.visitMethod(ACC_PUBLIC, "getViewers", "()Ljava/util/List;", "()Ljava/util/List<Lorg/bukkit/entity/HumanEntity;>;", null);
+        mv = classWriter.visitMethod(ACC_PUBLIC, "getViewers", "()Ljava/util/List;",
+                "()Ljava/util/List<Lorg/bukkit/entity/HumanEntity;>;", null);
         mv.visitCode();
         mv.visitVarInsn(ALOAD, 0);
         mv.visitFieldInsn(GETFIELD, classNode.name, "transaction", "Ljava/util/List;");
