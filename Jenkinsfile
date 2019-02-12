@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh 'mvn clean package install deploy:deploy javadoc:javadoc'
                 sh 'chmod +x gradlew && ./gradlew reobfuscate'
-                archiveArtifacts artifacts: 'target/*.jar', fingerprint: true 
+                archiveArtifacts artifacts: 'build/localCache/*.jar', fingerprint: true 
             }
         }
     }
