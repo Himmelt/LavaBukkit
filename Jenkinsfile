@@ -8,8 +8,6 @@ pipeline {
                 sh 'chmod +x gradlew && ./gradlew reobfuscate'
             }
         }
-    }
-    stages {
         stage('Archive') {
             steps {
                 archiveArtifacts artifacts: 'build/localCache/*.jar', fingerprint: true 
