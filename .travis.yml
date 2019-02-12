@@ -1,4 +1,3 @@
-dist: xenial
 language: java
 dist: cosmic # Ubuntu 18.10 - Latest
 jdk:
