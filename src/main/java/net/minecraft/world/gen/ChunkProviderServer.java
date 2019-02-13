@@ -23,9 +23,11 @@ import net.minecraft.world.WorldServer;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.IChunkProvider;
+import net.minecraft.world.chunk.storage.AnvilChunkLoader;
 import net.minecraft.world.chunk.storage.IChunkLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.bukkit.craftbukkit.chunkio.ChunkIOExecutor;
 import org.bukkit.event.world.ChunkUnloadEvent;
 
 // TODO: This class needs serious testing.
@@ -69,6 +71,40 @@ public class ChunkProviderServer implements IChunkProvider
             Chunk chunk = (Chunk)objectiterator.next();
             this.queueUnload(chunk);
         }
+    }
+
+    public Chunk getChunkAt(int i, int j) {
+        return this.getChunkAt(i, j, null);
+    }
+
+    public Chunk getChunkAt(int i, int j, Runnable runnable) {
+        return this.getChunkAt(i, j, runnable, true);
+    }
+
+    public Chunk getChunkAt(int i, int j, Runnable runnable, boolean generate) {
+        Chunk chunk = this.getLoadedChunk(i, j);
+        AnvilChunkLoader loader = null;
+        if (this.chunkLoader instanceof AnvilChunkLoader) {
+            loader = (AnvilChunkLoader) this.chunkLoader;
+        }
+        if (chunk == null && loader != null && loader.isChunkGeneratedAt(i, j)) {
+            if (runnable != null) {
+                ChunkIOExecutor.queueChunkLoad(this.world, loader, this, i, j, runnable);
+                return null;
+            }
+            chunk = ChunkIOExecutor.syncChunkLoad(this.world, loader, this, i, j);
+        } else if (chunk == null && generate) {
+            chunk = this.provideChunk(i, j);
+        }
+        if (runnable != null) {
+            runnable.run();
+        }
+        return chunk;
+    }
+
+    @Nullable
+    public Chunk getLoadedChunkAt(int x, int z) {
+        return getLoadedChunk(x, z);
     }
 
     @Nullable

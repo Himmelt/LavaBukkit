@@ -503,8 +503,8 @@ public final class ItemStack implements net.minecraftforge.common.capabilities.I
         if (CraftMagicNumbers.getBlock(CraftMagicNumbers.getId(this.getItem())) == Blocks.DOUBLE_PLANT && (meta > 5 || meta < 0)) {
             meta = 0;
         }
-        // getItem().setDamage(this, meta);
-        this.itemDamage = meta;
+        getItem().setDamage(this, meta);
+        // this.itemDamage = meta;
         // CraftBukkit end
     }
 

@@ -81,6 +81,8 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldServer;
+import net.minecraftforge.common.ForgeHooks;
+import net.minecraftforge.common.ISpecialArmor;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.apache.logging.log4j.LogManager;
@@ -1575,68 +1577,52 @@ public abstract class EntityLivingBase extends Entity
         if (!this.isEntityInvulnerable(damagesource)) {
             final boolean human = this instanceof EntityPlayer;
             float originalDamage = f;
-            Function<Double, Double> hardHat = new Function<Double, Double>() {
-                @Override
-                public Double apply(Double f) {
-                    if ((damagesource == DamageSource.ANVIL || damagesource == DamageSource.FALLING_BLOCK) && !EntityLivingBase.this.getItemStackFromSlot(EntityEquipmentSlot.HEAD).isEmpty()) {
-                        return -(f - (f * 0.75F));
 
-                    }
-                    return -0.0;
+            f = ForgeHooks.onLivingHurt(this, damagesource, f);
+            if (f < 1) {
+                return true;
+            }
+
+            Function<Double, Double> hardHat = f12 -> {
+                if ((damagesource == DamageSource.ANVIL || damagesource == DamageSource.FALLING_BLOCK) && !EntityLivingBase.this.getItemStackFromSlot(EntityEquipmentSlot.HEAD).isEmpty()) {
+                    return -(f12 - (f12 * 0.75F));
+
                 }
+                return -0.0;
             };
             float hardHatModifier = hardHat.apply((double) f).floatValue();
             f += hardHatModifier;
 
-            Function<Double, Double> blocking = new Function<Double, Double>() {
-                @Override
-                public Double apply(Double f) {
-                    return -((EntityLivingBase.this.canBlockDamageSource(damagesource)) ? f : 0.0);
-                }
-            };
+            Function<Double, Double> blocking = f13 -> -((EntityLivingBase.this.canBlockDamageSource(damagesource)) ? f13 : 0.0);
             float blockingModifier = blocking.apply((double) f).floatValue();
             f += blockingModifier;
 
-            Function<Double, Double> armor = new Function<Double, Double>() {
-                @Override
-                public Double apply(Double f) {
-                    return -(f - EntityLivingBase.this.applyArmorCalculations(damagesource, f.floatValue()));
-                }
-            };
+            Function<Double, Double> armor = f14 -> -(f14 - EntityLivingBase.this.applyArmorCalculations(damagesource, f14.floatValue()));
             float armorModifier = armor.apply((double) f).floatValue();
             f += armorModifier;
 
-            Function<Double, Double> resistance = new Function<Double, Double>() {
-                @Override
-                public Double apply(Double f) {
-                    if (!damagesource.isDamageAbsolute() && EntityLivingBase.this.isPotionActive(MobEffects.RESISTANCE) && damagesource != DamageSource.OUT_OF_WORLD) {
-                        int i = (EntityLivingBase.this.getActivePotionEffect(MobEffects.RESISTANCE).getAmplifier() + 1) * 5;
-                        int j = 25 - i;
-                        float f1 = f.floatValue() * (float) j;
-                        return -(f - (f1 / 25.0F));
-                    }
-                    return -0.0;
+            Function<Double, Double> resistance = f15 -> {
+                if (!damagesource.isDamageAbsolute() && EntityLivingBase.this.isPotionActive(MobEffects.RESISTANCE) && damagesource != DamageSource.OUT_OF_WORLD) {
+                    int i = (EntityLivingBase.this.getActivePotionEffect(MobEffects.RESISTANCE).getAmplifier() + 1) * 5;
+                    int j = 25 - i;
+                    float f1 = f15.floatValue() * (float) j;
+                    return -(f15 - (f1 / 25.0F));
                 }
+                return -0.0;
             };
             float resistanceModifier = resistance.apply((double) f).floatValue();
             f += resistanceModifier;
 
-            Function<Double, Double> magic = new Function<Double, Double>() {
-                @Override
-                public Double apply(Double f) {
-                    return -(f - EntityLivingBase.this.applyPotionDamageCalculations(damagesource, f.floatValue()));
-                }
-            };
+            Function<Double, Double> magic = f16 -> -(f16 - EntityLivingBase.this.applyPotionDamageCalculations(damagesource, f16.floatValue()));
             float magicModifier = magic.apply((double) f).floatValue();
             f += magicModifier;
 
-            Function<Double, Double> absorption = new Function<Double, Double>() {
-                @Override
-                public Double apply(Double f) {
-                    return -(Math.max(f - Math.max(f - EntityLivingBase.this.getAbsorptionAmount(), 0.0F), 0.0F));
-                }
-            };
+            Function<Double, Double> absorption = f17 -> -(Math.max(f17 - Math.max(f17 - EntityLivingBase.this.getAbsorptionAmount(), 0.0F), 0.0F));
             float absorptionModifier = absorption.apply((double) f).floatValue();
+
+            // Call forge event and save new original damage
+            final float livingDamage = ForgeHooks.onLivingDamage(this, damagesource, f);
+            originalDamage = livingDamage - (f - originalDamage) + armorModifier + magicModifier;
 
             EntityDamageEvent event = CraftEventFactory.handleLivingEntityDamageEvent(this, damagesource, originalDamage, hardHatModifier, blockingModifier, armorModifier, resistanceModifier, magicModifier, absorptionModifier, hardHat, blocking, armor, resistance, magic, absorption);
             if (event.isCancelled()) {
@@ -1653,6 +1639,12 @@ public abstract class EntityLivingBase extends Entity
             // Apply damage to armor
             if (!damagesource.isUnblockable()) {
                 float armorDamage = (float) (event.getDamage() + event.getDamage(EntityDamageEvent.DamageModifier.BLOCKING) + event.getDamage(EntityDamageEvent.DamageModifier.HARD_HAT));
+
+                if (human) {
+                    EntityPlayer player = (EntityPlayer) this;
+                    armorDamage = ISpecialArmor.ArmorProperties.applyArmor(player, player.inventory.armorInventory, damagesource, armorDamage);
+                }
+
                 this.damageArmor(armorDamage);
             }
 
@@ -1678,9 +1670,8 @@ public abstract class EntityLivingBase extends Entity
                 }
                 // CraftBukkit end
                 float f2 = this.getHealth();
-
-                this.setHealth(f2 - f);
                 this.getCombatTracker().trackDamage(damagesource, f2, f);
+                this.setHealth(f2 - f);
                 // CraftBukkit start
                 if (!human) {
                     this.setAbsorptionAmount(this.getAbsorptionAmount() - f);

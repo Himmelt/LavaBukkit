@@ -73,7 +73,7 @@ public final class VanillaCommandWrapper extends BukkitCommand {
         // Copied from net.minecraft.server.CommandHandler
         int i = getPlayerListSize(as);
         int j = 0;
-        // Some commands use the worldserver variable but we leave it full of null values,
+        // Some commands use the worlds variable but we leave it full of null values,
         // so we must temporarily populate it with the world of the commandsender
         WorldServer[] prev = MinecraftServer.getServerCB().worlds;
         MinecraftServer server = MinecraftServer.getServerCB();

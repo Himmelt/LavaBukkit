@@ -467,7 +467,7 @@ public abstract class MinecraftServer implements ICommandSender, Runnable, IThre
             if (!this.isSinglePlayer()) {
                 world.getWorldInfo().setGameType(this.getGameType());
             }
-            worldServerList.add(world);
+            //worldServerList.add(world);
             getPlayerList().setPlayerManager(worldServerList.toArray(new WorldServer[worldServerList.size()]));
             net.minecraftforge.common.MinecraftForge.EVENT_BUS
                     .post(new net.minecraftforge.event.world.WorldEvent.Load(world));
