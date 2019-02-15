@@ -1,5 +1,5 @@
 # LavaBukkit
-<div style="text-align:center"><img src ="https://matrixdevteam.ml/inc/img/LavaBukkitLogo.png" /></div>
+<div style="text-align:center"><img src ="https://cdn.discordapp.com/attachments/362654848711262208/544740693743108105/LB.png" /></div>
 
 [![Build Status](https://img.shields.io/travis/com/MatrixDevTeam/LavaBukkit.svg?style=flat-square)](https://travis-ci.com/MatrixDevTeam/LavaBukkit)
 ![](https://img.shields.io/github/last-commit/MatrixDevTeam/LavaBukkit.svg?style=popout-square)
