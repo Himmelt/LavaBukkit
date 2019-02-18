@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean package install deploy:deploy javadoc:javadoc'
+                sh 'mvn clean package install javadoc:javadoc'
                 sh 'chmod +x gradlew && ./gradlew reobfuscate'
             }
         }
